@@ -11558,7 +11558,7 @@ h2 {
 
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+ 
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -11587,6 +11587,2203 @@ h2 {
   padding: 10px 15px;
   border: none;
 }
+.content-btn-service .btn-service-storage {
+            align-items: center;
+            border-radius: 50%;
+            display: flex;
+            padding: 10px 6px 10px 8px
+        }
+
+        .content-btn-service .btn-service-storage.selected {
+            background: #fff2f5;
+            border: 1px solid #f36;
+            margin-left: -1px
+        }
+
+        .content-btn-service .btn-service-shipment {
+            align-items: center;
+            border-radius: 50%;
+            display: flex;
+            margin-left: 6px;
+            padding: 10px 7.5px
+        }
+
+        .content-btn-service .btn-service-shipment.selected {
+            background: #fff2f5;
+            border: 1px solid #f36
+        }
+
+        .content-btn-service .transform {
+            --transform-translate-x: 0;
+            --transform-translate-y: 0;
+            --transform-rotate: 0;
+            --transform-skew-x: 0;
+            --transform-skew-y: 0;
+            --transform-scale-x: 1;
+            --transform-scale-y: 1;
+            transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+            transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
+        }
+
+        .content-btn-service .duration-300 {
+            animation-duration: .3s
+        }
+
+        .content-btn-service .ease-in-out {
+            animation: ease-in-out
+        }
+
+        .tap .nanny-map .details-container .tabs .selected {
+            border-bottom: 2px solid #3e8518;
+            color: #3e8518
+        }
+
+        .tap .nanny-map .details-container .nanny-infos {
+            background-color: #91d83a;
+            color: #2d2d2d;
+            padding: 10px 25px
+        }
+
+        .tap .nanny-map .info-panel .back,
+        .tap .nanny-map .info-panel .info-part {
+            background-color: #91d83a;
+            color: #2d2d2d
+        }
+
+        .tap .nanny-map .nanny-card-bg:hover {
+            background-image: url(/dist/img/nanny-card-desktop-bg-tap.7038c2f.svg)
+        }
+
+        .nanny-map-body {
+            font-family: "Source Sans Pro";
+            overflow: hidden
+        }
+
+        .nanny-map {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden
+        }
+
+        .nanny-map .blurrable {
+            transition: filter .5s linear
+        }
+
+        .nanny-map .blurrable.blur-map {
+            filter: blur(3px);
+            -moz-filter: blur(3px);
+            -webkit-filter: blur(3px)
+        }
+
+        .nanny-map .info-panel {
+            height: calc(100vh - 76px);
+            position: relative;
+            transition: width .3s ease
+        }
+
+        .nanny-map .info-panel.double {
+            width: 835px
+        }
+
+        .nanny-map .map-panel {
+            flex-grow: 1;
+            height: calc(100vh - 76px)
+        }
+
+        .nanny-map .map-button {
+            background-color: #fff;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            bottom: 175px;
+            box-shadow: 0 2px 4px 0 #dadada;
+            cursor: pointer;
+            font-weight: 800;
+            height: 44px;
+            margin-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--notch-inset-bottom));
+            margin-right: 10px;
+            position: fixed;
+            right: 0;
+            z-index: 1
+        }
+
+        .nanny-map .map-button.toggle-subway {
+            background-image: url(/dist/img/transport.62064f7.svg);
+            top: 220px
+        }
+
+        .nanny-map .map-button.toggle-subway.selected {
+            background-image: url(/dist/img/transport-red.71f4664.svg)
+        }
+
+        .nanny-map .map-button.position {
+            background-image: url(/dist/img/position.a6b23ca.svg);
+            top: 177px
+        }
+
+        .nanny-map .map-button.map-list {
+            background-color: var(--main-color);
+            bottom: 150px;
+            color: #fff;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            left: 50%;
+            line-height: 21px;
+            padding: 10px 20px;
+            right: auto;
+            transform: translateX(-50%);
+            z-index: 4
+        }
+
+        .nanny-map .map-button.map-list.up {
+            z-index: 7
+        }
+
+        .nanny-map .map-button.map-list.map-type {
+            bottom: 40px;
+            bottom: calc(40px + var(--notch-inset-bottom));
+            bottom: calc(40px + constant(safe-area-inset-bottom) + var(--notch-inset-bottom));
+            bottom: calc(40px + env(safe-area-inset-bottom, 0px) + var(--notch-inset-bottom))
+        }
+
+        .nanny-map .map-button.map-list .nanny-icon {
+            margin-bottom: -1px;
+            margin-right: 10px
+        }
+
+        @media (max-width:992px) {
+            .nanny-map {
+                padding-top: 0
+            }
+
+            .nanny-map .cluster {
+                pointer-events: none !important
+            }
+
+            .nanny-map .map-panel {
+                height: 100vh
+            }
+
+            .nanny-map .map-button.toggle-subway {
+                bottom: 295px;
+                display: none;
+                top: auto
+            }
+
+            .nanny-map .map-button.position {
+                bottom: 240px;
+                display: none;
+                top: auto
+            }
+        }
+
+        @media (min-width:992px) {
+            .nanny-map .info-panel .box {
+                display: flex;
+                flex-flow: column;
+                height: 100%
+            }
+
+            .nanny-map .info-panel .nanny-scroll {
+                height: 100%;
+                overflow: auto;
+                padding-bottom: 130px
+            }
+
+            .nanny-map .info-panel .nanny-scroll::-webkit-scrollbar {
+                display: none;
+                height: 3px;
+                width: 3px
+            }
+
+            .nanny-map .info-panel .nanny-scroll::-webkit-scrollbar-track {
+                background: #efefef
+            }
+
+            .nanny-map .info-panel .nanny-scroll::-webkit-scrollbar-thumb {
+                background: #ccc
+            }
+
+            .nanny-map .info-panel .nanny-list {
+                background-color: #f8f8fb;
+                border-top: 1px solid #e7e8eb;
+                height: 100%;
+                opacity: 1;
+                overflow: hidden;
+                padding-left: 15px;
+                padding-right: 0;
+                padding-top: 19px;
+                transition: width .2s ease;
+                width: 426px
+            }
+
+            .nanny-map .info-panel .nanny-list.double {
+                width: 835px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg {
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJDYWxxdWVfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDM5NCAyMDAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZmZmO2ZpbHRlcjp1cmwoI2Ryb3Atc2hhZG93LTEpO308L3N0eWxlPjxmaWx0ZXIgaWQ9ImRyb3Atc2hhZG93LTEiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGZlT2Zmc2V0IGR4PSIwIiBkeT0iMCIvPjxmZUdhdXNzaWFuQmx1ciByZXN1bHQ9ImJsdXIiIHN0ZERldmlhdGlvbj0iMi44MyIvPjxmZUZsb29kIGZsb29kLWNvbG9yPSIjMDAwIiBmbG9vZC1vcGFjaXR5PSIuMTMiLz48ZmVDb21wb3NpdGUgaW4yPSJibHVyIiBvcGVyYXRvcj0iaW4iLz48ZmVDb21wb3NpdGUgaW49IlNvdXJjZUdyYXBoaWMiLz48L2ZpbHRlcj48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMTEyLDE5MC41SDE2Yy00LjQsMC04LTMuNi04LThWMTcuNWMwLTQuNCwzLjYtOCw4LThoOTZjMCwyLjcsMS4xLDUuMiwyLjksNy4xLDEuOSwxLjksNC40LDIuOSw3LjEsMi45LDUuNSwwLDEwLTQuNSwxMC0xMGwyNDYsLjFjNC40LDAsOCwzLjYsOCw4djE2NWMwLDQuNC0zLjYsOC04LDhsLTI0Ni0uMWMwLTIuNy0xLjEtNS4yLTIuOS03LjEtMS45LTEuOS00LjQtMi45LTcuMS0yLjktNS41LDAtMTAsNC41LTEwLDEwWiIvPjwvc3ZnPg==);
+                background-repeat: no-repeat;
+                display: inline-block;
+                height: 200px;
+                margin-top: 7px;
+                padding: 9px;
+                width: 395px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg:hover {
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJDYWxxdWVfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDM5NCAyMDAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZmZmO2ZpbHRlcjp1cmwoI2Ryb3Atc2hhZG93LTEpO308L3N0eWxlPjxmaWx0ZXIgaWQ9ImRyb3Atc2hhZG93LTEiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGZlT2Zmc2V0IGR4PSIwIiBkeT0iMCIvPjxmZUdhdXNzaWFuQmx1ciByZXN1bHQ9ImJsdXIiIHN0ZERldmlhdGlvbj0iMi44MyIvPjxmZUZsb29kIGZsb29kLWNvbG9yPSIjNTc1YTg5IiBmbG9vZC1vcGFjaXR5PSIuNiIvPjxmZUNvbXBvc2l0ZSBpbjI9ImJsdXIiIG9wZXJhdG9yPSJpbiIvPjxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIvPjwvZmlsdGVyPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0xMTIsMTkwLjVIMTZjLTQuNCwwLTgtMy42LTgtOFYxNy41YzAtNC40LDMuNi04LDgtOGg5NmMwLDIuNywxLjEsNS4yLDIuOSw3LjEsMS45LDEuOSw0LjQsMi45LDcuMSwyLjksNS41LDAsMTAtNC41LDEwLTEwbDI0NiwuMWM0LjQsMCw4LDMuNiw4LDh2MTY1YzAsNC40LTMuNiw4LTgsOGwtMjQ2LS4xYzAtMi43LTEuMS01LjItMi45LTcuMS0xLjktMS45LTQuNC0yLjktNy4xLTIuOS01LjUsMC0xMCw0LjUtMTAsMTBaIi8+PC9zdmc+)
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card {
+                height: 100%;
+                padding: 12px;
+                position: relative
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .highly-block {
+                display: flex;
+                position: absolute;
+                right: 10px;
+                top: 10px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .highly-block .high-inside {
+                background-color: #f0eff4;
+                border-radius: 5px;
+                margin-right: 5px;
+                padding: 2px 5px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .highly-block .premium-inside {
+                background-color: #fff2de;
+                border-radius: 5px;
+                padding: 2px 5px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .separator {
+                border-right: 1px dotted #dadada;
+                float: left;
+                height: 65%;
+                margin-left: 14px;
+                margin-right: 14px;
+                margin-top: 14px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .picture {
+                background-position: 50%;
+                background-size: cover;
+                border-radius: 8px;
+                float: left;
+                height: 156px;
+                width: 90px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info {
+                float: left;
+                height: 100%;
+                line-height: 19px;
+                padding-left: 27px;
+                padding-top: 3px;
+                position: relative;
+                width: 240px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .stars {
+                font-size: 12px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .average {
+                margin-right: 2px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .number {
+                color: #757b83;
+                float: none;
+                margin-left: 2px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .distance {
+                align-items: center;
+                display: flex;
+                font-size: 14px;
+                font-weight: 800
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .distance .nanny-icon {
+                margin-right: 7px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .luggage-storage-title {
+                font-size: 16px;
+                font-weight: 700
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .street {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 235px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .is-open {
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 3px;
+                margin-top: 10px
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .is-open .open {
+                color: #00811e
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .is-open .closed {
+                color: #e88600
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .more-btn {
+                align-items: center;
+                bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                width: 100%
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .more-btn .more {
+                display: inline-block;
+                font-size: 12px;
+                margin-top: 5px;
+                -webkit-text-decoration: underline;
+                text-decoration: underline
+            }
+
+            .nanny-map .info-panel .nanny-list .nanny-card-bg .nanny-card .info .more-btn .nanny-button {
+                padding: 7px 15px
+            }
+        }
+
+        .nanny-map .book-now {
+            font-size: 15px;
+            font-weight: 800
+        }
+
+        .nanny-map .info-panel .top-part {
+            padding-bottom: 10px
+        }
+
+        .nanny-map .info-panel .info-prices {
+            align-items: center;
+            display: flex;
+            font-size: 14px;
+            justify-content: space-between;
+            padding: 0 25px
+        }
+
+        .nanny-map .info-panel .info-prices .price-24 {
+            font-weight: 800;
+            line-height: 16px
+        }
+
+        .nanny-map .info-panel .info-prices .price-24 .price-head {
+            font-size: 16px
+        }
+
+        .nanny-map .info-panel .info-prices .all-stars {
+            display: inline;
+            margin-left: 10px;
+            margin-right: 5px
+        }
+
+        .nanny-map .info-panel .info-part {
+            background-color: #fff;
+            color: #000;
+            padding: 20px 25px;
+            width: 100%;
+            z-index: 0
+        }
+
+        .nanny-map .info-panel .info-part .title {
+            color: #2f2e41;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px
+        }
+
+        .nanny-map .info-panel .info-part .content {
+            font: normal normal normal 14px/19px Source Sans Pro;
+            max-width: 340px
+        }
+
+        .nanny-map .info-panel .inside-wave {
+            background: #f8f8fb;
+            border-radius: 8px;
+            padding: 15px
+        }
+
+        .nanny-map .nannies-container {
+            font-family: "Source Sans Pro"
+        }
+
+        .nanny-map .nannies-container h2 {
+            font-family: Catamaran;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            margin-top: 10px
+        }
+
+        .nanny-map .nannies-container .map-list-warning {
+            font-weight: 700;
+            padding: 2px;
+            text-align: center
+        }
+
+        .nanny-map .nannies-container .sub-title {
+            font-size: 13px;
+            margin-left: 10px
+        }
+
+        .nanny-map .nannies-container .nope {
+            margin: 30px 25px
+        }
+
+        .nanny-map .nannies-container .nope-img {
+            background-image: url(/dist/img/nope.9db9bae.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 300px;
+            width: 100%
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.HOTEL,
+        .nanny-map .nanny-list .nanny-card .picture.HOTEL {
+            background-image: url(/dist/img/hotel-preview.9695698.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.GROCERY,
+        .nanny-map .nanny-list .nanny-card .picture.GROCERY {
+            background-image: url(/dist/img/grocery-preview.29ce893.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.FLORIST,
+        .nanny-map .nanny-list .nanny-card .picture.FLORIST {
+            background-image: url(/dist/img/florist-preview.c2abe8b.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.BOOKSHOP,
+        .nanny-map .nanny-list .nanny-card .picture.BOOKSHOP {
+            background-image: url(/dist/img/bookshop-preview.d50f74f.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.CLOTHES,
+        .nanny-map .nanny-list .nanny-card .picture.CLOTHES {
+            background-image: url(/dist/img/clothes-preview.2d4e1f4.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.RESTAURANT,
+        .nanny-map .nanny-list .nanny-card .picture.RESTAURANT {
+            background-image: url(/dist/img/restaurant-preview.7190efa.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.SOUVENIR,
+        .nanny-map .nanny-list .nanny-card .picture.SOUVENIR {
+            background-image: url(/dist/img/souvenir-preview.0530668.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.BIKE_RENTALS_AND_REPAIR,
+        .nanny-map .nanny-list .nanny-card .picture.BIKE_RENTALS_AND_REPAIR {
+            background-image: url(/dist/img/bike-rentals-preview.5f68d61.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.POSTAL_SERVICE,
+        .nanny-map .nanny-list .nanny-card .picture.POSTAL_SERVICE {
+            background-image: url(/dist/img/postal-service-preview.4e9918a.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.LUGGAGE_LOCKER,
+        .nanny-map .nanny-list .nanny-card .picture.LUGGAGE_LOCKER {
+            background-image: url(/dist/img/luggage-locker-preview.927a1db.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.TOURIST_OFFICE,
+        .nanny-map .nanny-list .nanny-card .picture.TOURIST_OFFICE {
+            background-image: url(/dist/img/tourist-office-preview.3fae5e7.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.ELECTRONICS_STORE,
+        .nanny-map .nanny-list .nanny-card .picture.ELECTRONICS_STORE {
+            background-image: url(/dist/img/electronics-store-preview.4c93dd9.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.COFFEE_AND_CO_WORKING,
+        .nanny-map .nanny-list .nanny-card .picture.COFFEE_AND_CO_WORKING {
+            background-image: url(/dist/img/coffee-and-co-working-preview.1a27077.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.SPORT_AND_WELLNESS,
+        .nanny-map .nanny-list .nanny-card .picture.SPORT_AND_WELLNESS {
+            background-image: url(/dist/img/sport-and-wellness-preview.c38bc46.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.OTHER,
+        .nanny-map .nanny-list .nanny-card .picture.OTHER {
+            background-image: url(/dist/img/other-preview.fed3149.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.CARREFOUR,
+        .nanny-map .nanny-list .nanny-card .picture.CARREFOUR {
+            background-image: url(/dist/img/carrefour-preview.28ebd99.jpg)
+        }
+
+        .nanny-map .nanny-card-mobile .nanny-card .picture.TOBACCO,
+        .nanny-map .nanny-list .nanny-card .picture.TOBACCO {
+            background-image: url(/dist/img/tobacco-preview.4080b83.jpg)
+        }
+
+        .nanny-map .bottom-place {
+            height: 140px
+        }
+
+        @media (max-width:992px) {
+            .nanny-map .nannies-container {
+                padding-left: 15px;
+                padding-right: 15px
+            }
+
+            .nanny-map .nannies-container .color-nanny-dark {
+                margin-bottom: 15px;
+                margin-top: 15px
+            }
+
+            .nanny-map .nanny-list {
+                background-color: #fff;
+                border-radius: 10px 10px 0 0;
+                bottom: 0;
+                height: calc(100% - 80px);
+                height: calc(100% - 80px - var(--notch-inset-top));
+                height: calc(100% - 80px - constant(safe-area-inset-top) - var(--notch-inset-top));
+                height: calc(100% - 80px - env(safe-area-inset-top) - var(--notch-inset-top));
+                left: 0;
+                margin-top: 70px;
+                position: fixed;
+                transform: translateY(100%);
+                transition: transform .2s ease;
+                width: 100vw
+            }
+
+            .nanny-map .nanny-list.listup {
+                transform: translateY(0);
+                z-index: 6
+            }
+
+            .nanny-map .nanny-list .header-mobile {
+                padding: 20px;
+                text-align: center
+            }
+
+            .nanny-map .nanny-list .nanny-scroll {
+                height: 100%;
+                overflow: auto;
+                padding-bottom: 130px
+            }
+
+            .nanny-map .nanny-list .nanny-scroll::-webkit-scrollbar {
+                height: 3px;
+                width: 3px
+            }
+
+            .nanny-map .nanny-list .nanny-scroll::-webkit-scrollbar-track {
+                background: #efefef
+            }
+
+            .nanny-map .nanny-list .nanny-scroll::-webkit-scrollbar-thumb {
+                background: #ccc
+            }
+
+            .nanny-map .nanny-list .nanny-card {
+                background-color: #fff;
+                border-radius: 15px;
+                box-shadow: 0 0 7px 0 #dadada;
+                display: block;
+                margin-bottom: 15px;
+                padding: 10px 12px;
+                position: relative
+            }
+
+            .nanny-map .nanny-list .nanny-card .highly-block {
+                display: flex;
+                position: absolute;
+                right: 10px;
+                top: 10px
+            }
+
+            .nanny-map .nanny-list .nanny-card .highly-block .high-inside {
+                background-color: #f0eff4;
+                border-radius: 5px;
+                margin-right: 5px;
+                padding: 2px 5px
+            }
+
+            .nanny-map .nanny-list .nanny-card .highly-block .premium-inside {
+                background-color: #fff2de;
+                border-radius: 5px;
+                padding: 2px 5px
+            }
+
+            .nanny-map .nanny-list .nanny-card .picture {
+                background-position: 50%;
+                background-size: cover;
+                border-radius: 8px;
+                float: left;
+                height: 55px;
+                margin-right: 12px;
+                margin-top: 4px;
+                width: 55px
+            }
+
+            .nanny-map .nanny-list .nanny-card .luggage-storage-title {
+                font-size: 16px;
+                font-weight: 700
+            }
+
+            .nanny-map .nanny-list .nanny-card .street {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: inherit;
+                margin-bottom: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 220px
+            }
+
+            .nanny-map .nanny-list .nanny-card .type {
+                color: #818181;
+                float: left;
+                font-size: 14px;
+                max-width: 145px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+
+            .nanny-map .nanny-list .nanny-card .type-point {
+                margin-left: 5px;
+                margin-right: 7px;
+                max-width: 15px
+            }
+
+            .nanny-map .nanny-list .nanny-card .info-distance {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                margin-top: 10px
+            }
+
+            .nanny-map .nanny-list .nanny-card .info-distance .walk {
+                display: none
+            }
+
+            .nanny-map .nanny-list .nanny-card .is-open .open {
+                color: #00811e
+            }
+
+            .nanny-map .nanny-list .nanny-card .is-open .closed {
+                color: #e88600
+            }
+
+            .nanny-map .nanny-list .nanny-card .mobile-details-nanny {
+                display: flex;
+                flex: 0 0 55%;
+                font-size: 14px;
+                margin-top: 0
+            }
+
+            .nanny-map .nanny-list .nanny-card .mobile-details-nanny:after {
+                background: 0 0;
+                border: none;
+                content: "•";
+                font-size: inherit;
+                margin-left: 4px;
+                margin-right: 4px;
+                padding-left: inherit;
+                vertical-align: baseline;
+                vertical-align: initial
+            }
+
+            .nanny-map .nanny-list .nanny-card .mobile-details-nanny .w-50 {
+                width: auto !important
+            }
+
+            .nanny-map .nanny-list .nanny-card .mobile-details-nanny .fl-b-auto {
+                flex-basis: auto
+            }
+
+            .nanny-map .nanny-list .nanny-card .mobile-details-nanny p {
+                display: none
+            }
+
+            .nanny-map .nanny-list .nanny-card .mobile-details-nanny .is-open {
+                font-weight: 700
+            }
+
+            .nanny-map .nanny-list .nanny-card .pl-42 {
+                display: none
+            }
+
+            .nanny-map .nanny-list .nanny-card .distance {
+                align-items: center;
+                display: flex;
+                font-size: 13px;
+                font-weight: 800;
+                margin-top: 0
+            }
+
+            .nanny-map .nanny-list .nanny-card .distance>div {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .nanny-map .nanny-list .nanny-card .distance .nanny-icon {
+                margin-right: 7px
+            }
+
+            .nanny-map .nanny-list .nanny-card .distance .chevron-right {
+                height: 8px;
+                margin-left: 1px !important;
+                margin-right: 1px !important;
+                width: 6px
+            }
+
+            .nanny-map .nanny-list .nanny-card .nanny-stars {
+                font-size: 14px;
+                font-weight: 700
+            }
+
+            .nanny-map .nanny-list .nanny-card .nanny-stars .all-stars {
+                margin-right: 5px
+            }
+
+            .nanny-map .nanny-list .nanny-card .nanny-stars .reviews-count {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                color: #818181;
+                display: -webkit-box;
+                margin-left: 3px;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+        }
+
+        .loading-nanny-limit {
+            transform: scale(.2)
+        }
+
+        @media (min-width:992px) {
+            .nanny-map .map-details {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%
+            }
+
+            .nanny-map .nanny-card-bg .street {
+                line-height: inherit
+            }
+
+            .nanny-map .nanny-card-bg .type-point {
+                margin-left: 5px;
+                margin-right: 7px;
+                max-width: 15px
+            }
+
+            .nanny-map .nanny-card-bg .type,
+            .nanny-map .nanny-card-bg .type-point {
+                color: #717b88;
+                float: left;
+                font-size: 14px;
+                max-width: 123px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+
+            .nanny-map .nanny-card-bg .distance {
+                font-size: 14px;
+                line-height: inherit
+            }
+
+            .nanny-map .nanny-card-bg .distance .chevron-right {
+                height: 8px;
+                margin-left: 3px !important;
+                margin-right: 3px !important;
+                width: 6px
+            }
+
+            .nanny-map .nanny-card-bg .nanny-stars {
+                font-size: 14px;
+                font-weight: 700
+            }
+
+            .nanny-map .nanny-card-bg .nanny-stars .all-stars {
+                margin-right: 5px
+            }
+
+            .nanny-map .nanny-card-bg .nanny-stars .reviews-count {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                color: #717b88;
+                display: -webkit-box;
+                margin-left: 3px;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .nanny-map .nanny-card-bg .nanny-separator-info {
+                margin-bottom: 5px;
+                margin-top: 12px
+            }
+        }
+
+        .top-part .tp-widget-wrapper {
+            margin-top: 0;
+            position: static
+        }
+
+        .top-part .tp-widget-wrapper .tp-widget-stars {
+            width: 60px
+        }
+
+        .top-part .tp-widget-wrapper .tp-widget-trustscore {
+            display: inline-block;
+            font: normal normal 600 15px/19px Source Sans Pro;
+            margin: 0;
+            vertical-align: middle
+        }
+
+        .top-part .tp-widget-wrapper .tp-widget-logo {
+            float: left;
+            margin: 0 10px;
+            max-width: 75px;
+            width: 75px
+        }
+
+        .top-part .tp-widget-wrapper .tp-widget-stars {
+            display: none
+        }
+
+        .nanny-map .back {
+            background-color: #ff877f;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            position: absolute;
+            width: 100%;
+            z-index: 1
+        }
+
+        .nanny-map .booking-map {
+            border: 1px solid rgba(85, 85, 85, .333);
+            height: auto;
+            max-height: 220px;
+            width: 100%
+        }
+
+        .nanny-map .back .inside-wave {
+            height: 40px;
+            padding: 10px 25px
+        }
+
+        .nanny-map .back .nanny-icon {
+            margin-right: 10px
+        }
+
+        .nanny-map .picture-top {
+            background-position: 50%;
+            background-size: cover;
+            height: 140px
+        }
+
+        .nanny-map .picture-top.HOTEL {
+            background-image: url(/dist/img/hotel-banner.3e0cf0e.jpg)
+        }
+
+        .nanny-map .picture-top.GROCERY {
+            background-image: url(/dist/img/grocery-banner.9c85de2.jpg)
+        }
+
+        .nanny-map .picture-top.FLORIST {
+            background-image: url(/dist/img/florist-banner.9d199f4.jpg)
+        }
+
+        .nanny-map .picture-top.BOOKSHOP {
+            background-image: url(/dist/img/bookshop-banner.f7c982a.jpg)
+        }
+
+        .nanny-map .picture-top.CLOTHES {
+            background-image: url(/dist/img/clothes-banner.501ba0e.jpg)
+        }
+
+        .nanny-map .picture-top.RESTAURANT {
+            background-image: url(/dist/img/restaurant-banner.0563a84.jpg)
+        }
+
+        .nanny-map .picture-top.SOUVENIR {
+            background-image: url(/dist/img/souvenir-banner.cfab2b6.jpg)
+        }
+
+        .nanny-map .picture-top.BIKE_RENTALS_AND_REPAIR {
+            background-image: url(/dist/img/bike-rentals-banner.5e95a51.jpg)
+        }
+
+        .nanny-map .picture-top.POSTAL_SERVICE {
+            background-image: url(/dist/img/postal-service-banner.2f0bfdc.jpg)
+        }
+
+        .nanny-map .picture-top.LUGGAGE_LOCKER {
+            background-image: url(/dist/img/luggage-locker-banner.3b3cb68.jpg)
+        }
+
+        .nanny-map .picture-top.TOURIST_OFFICE {
+            background-image: url(/dist/img/tourist-office-banner.2ec2d2c.jpg)
+        }
+
+        .nanny-map .picture-top.ELECTRONICS_STORE {
+            background-image: url(/dist/img/electronics-store-banner.2ecaeff.jpg)
+        }
+
+        .nanny-map .picture-top.COFFEE_AND_CO_WORKING {
+            background-image: url(/dist/img/coffee-and-co-working-banner.a21a016.jpg)
+        }
+
+        .nanny-map .picture-top.SPORT_AND_WELLNESS {
+            background-image: url(/dist/img/sport-and-wellness-banner.8628ab6.jpg)
+        }
+
+        .nanny-map .picture-top.OTHER {
+            background-image: url(/dist/img/other-banner.94ee492.jpg)
+        }
+
+        .nanny-map .picture-top.CARREFOUR {
+            background-image: url(/dist/img/carrefour-banner.8290763.jpg)
+        }
+
+        .nanny-map .picture-top.TOBACCO {
+            background-image: url(/dist/img/tobacco-banner.8fc694d.jpg)
+        }
+
+        .details-container {
+            background-color: #fff;
+            height: 100%;
+            overflow-y: auto
+        }
+
+        .details-container .capacity {
+            padding: 0 20px 10px;
+            text-align: center
+        }
+
+        .details-container .nanny-infos {
+            background-color: #fff;
+            color: #000;
+            padding: 12px 25px
+        }
+
+        .details-container .nanny-infos .type-icon {
+            background-color: #fff;
+            background-origin: content-box;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 35px 35px;
+            border: 2px solid #e4e4e4;
+            border-radius: 30px;
+            float: right;
+            height: 57px;
+            margin-top: -41px;
+            width: 57px
+        }
+
+        .details-container .nanny-infos .type-icon.HOTEL {
+            background-image: url(/dist/img/icon-hotel.2421862.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.GROCERY {
+            background-image: url(/dist/img/icon-grocery.a7c1c58.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.FLORIST {
+            background-image: url(/dist/img/icon-florist.f525c59.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.BOOKSHOP {
+            background-image: url(/dist/img/icon-bookshop.2c39a76.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.CLOTHES {
+            background-image: url(/dist/img/icon-clothes.7efdd9b.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.RESTAURANT {
+            background-image: url(/dist/img/icon-restaurant.c2ce403.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.SOUVENIR {
+            background-image: url(/dist/img/icon-souvenir.dd4943a.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.BIKE_RENTALS_AND_REPAIR {
+            background-image: url(/dist/img/icon-bike-rentals.32510ab.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.POSTAL_SERVICE {
+            background-image: url(/dist/img/icon-postal-service.cb2e38d.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.LUGGAGE_LOCKER {
+            background-image: url(/dist/img/icon-luggage-locker.ac596da.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.TOURIST_OFFICE {
+            background-image: url(/dist/img/icon-tourist-office.e08c8fa.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.ELECTRONICS_STORE {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjBweCIgaGVpZ2h0PSI2MHB4IiB2aWV3Qm94PSIwIDAgNjAgNjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjQgKDY3Mzc4KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5BcnRib2FyZDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJBcnRib2FyZCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Ikdyb3VwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGN4PSIzMCIgY3k9IjMwIiByPSIyOSI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjIwIiB5PSIxNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjMyIiByeD0iMTAiPjwvcmVjdD4KICAgICAgICAgICAgPHBhdGggZD0iTTMwLDE5LjMyODYxMzMgTDMwLDI2IiBpZD0iUGF0aC02IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTMwLDEuMTU0Nzg1MTYgTDMwLDE0IiBpZD0iUGF0aC02IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=)
+        }
+
+        .details-container .nanny-infos .type-icon.COFFEE_AND_CO_WORKING {
+            background-image: url(/dist/img/icon-coffee-and-co-working.69c6bcd.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.SPORT_AND_WELLNESS {
+            background-image: url(/dist/img/icon-sport-and-wellness.3188ed3.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.OTHER {
+            background-image: url(/dist/img/icon-other.63fdb89.svg)
+        }
+
+        .details-container .nanny-infos .type-icon.CARREFOUR {
+            background-image: url(/dist/img/icon-carrefour.f555771.svg)
+        }
+
+        .details-container .nanny-infos .street {
+            font-weight: 400;
+            line-height: 17px
+        }
+
+        .details-container .nanny-infos .luggage-storage-title {
+            font-size: 17px;
+            font-weight: 700
+        }
+
+        .details-container .distance {
+            align-items: center;
+            display: flex;
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 25px
+        }
+
+        .details-container .distance .nanny-icon {
+            margin-right: 7px
+        }
+
+        .details-container .distance .chevron-right {
+            height: 8px;
+            margin-left: 3px !important;
+            margin-right: 3px !important;
+            width: 6px
+        }
+
+        .details-container .booking-infos {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px 15px;
+            width: 100%
+        }
+
+        .details-container .booking-infos .book-button {
+            text-align: right
+        }
+
+        @media (max-width:992px) {
+            .details-container .booking-infos .book-button {
+                flex: 0 0 120px
+            }
+        }
+
+        .details-container .booking-infos .values {
+            margin-top: 5px
+        }
+
+        .details-container .booking-infos .book-button .nanny-button {
+            padding: 13px;
+            width: 140px
+        }
+
+        @media (max-width:992px) {
+            .details-container .booking-infos .book-button .nanny-button {
+                padding: 0;
+                width: 120px
+            }
+
+            .details-container .booking-infos .book-button .nanny-button.disabled {
+                width: 130px
+            }
+
+            .details-container .booking-infos .book-button .nanny-button.disabled .text {
+                margin-left: 15px;
+                margin-right: 0
+            }
+        }
+
+        .details-container .booking-infos .book-button .nanny-icon,
+        .details-container .booking-infos .book-button .spinner {
+            float: right
+        }
+
+        .details-container .tabs div {
+            background-color: #fcfcfc;
+            border-bottom: 1px solid #dadada;
+            border-top: 1px solid #e4e4e4;
+            color: #dadada;
+            float: left;
+            font-family: Catamaran;
+            font-size: 17px;
+            font-weight: 600;
+            height: 50px;
+            padding-top: 14px;
+            text-align: center;
+            width: 50%
+        }
+
+        .details-container .tabs .selected {
+            background-color: #fff;
+            border-bottom: 2px solid #2f2e41;
+            color: #2f2e41
+        }
+
+        .details-container .tabs .about-tab.selected {
+            border-right: 1px solid #dadada
+        }
+
+        .details-container .tabs .notes-tab.selected {
+            border-left: 1px solid #dadada
+        }
+
+        .details-container .tabs .notes-tab.loading {
+            color: #dadada
+        }
+
+        .details-container .about-nanny {
+            background-color: #fff;
+            height: 100%;
+            padding: 1px 25px 0
+        }
+
+        .details-container .about-nanny .accordion-nanny {
+            border-bottom: 1px solid #e4e4e4;
+            cursor: pointer;
+            padding-bottom: 24px;
+            padding-top: 24px
+        }
+
+        .details-container .about-nanny .accordion-nanny .accordion-title {
+            align-items: center;
+            display: flex;
+            font-size: 15px;
+            font-weight: 700;
+            justify-content: space-between
+        }
+
+        .details-container .about-nanny .accordion-nanny .accordion-title .smaller-title {
+            color: #717b88;
+            font-size: 14px;
+            font-weight: 400
+        }
+
+        .details-container .about-nanny .accordion-nanny .lh-19 {
+            line-height: 21px
+        }
+
+        .details-container .about-nanny .accordion-nanny .nanny-services {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px
+        }
+
+        .details-container .about-nanny .accordion-nanny .accordion-ellipsis {
+            max-width: 230px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .details-container .about-nanny .accordion-nanny .nanny-accordion-icon {
+            align-items: center;
+            background-color: #f0eff4;
+            border-radius: 7px;
+            display: flex;
+            font-size: 24px;
+            height: 41px;
+            justify-content: center;
+            margin-right: 13px;
+            width: 41px
+        }
+
+        .details-container .about-nanny .accordion-nanny .is-open .open {
+            color: #00811e
+        }
+
+        .details-container .about-nanny .accordion-nanny .is-open .closed {
+            color: #e88600
+        }
+
+        .details-container .about-nanny .accordion-nanny .empty {
+            height: 5px;
+            width: 10px
+        }
+
+        .details-container .about-nanny .accordion-nanny .accordion-content {
+            font-size: 15px;
+            padding-top: 20px
+        }
+
+        .details-container .about-nanny .booking-include .point-title {
+            font-weight: 700;
+            margin-bottom: 5px
+        }
+
+        .details-container .about-nanny .booking-include .point-content {
+            color: #717b88;
+            line-height: 19px;
+            margin-bottom: 20px
+        }
+
+        .details-container .about-nanny .datetime {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 6px 6px 10px;
+            width: 100%
+        }
+
+        .details-container .about-nanny .datetime.date-selected {
+            background-color: #f8f8fb
+        }
+
+        .details-container .about-nanny .datetime .time {
+            text-align: right
+        }
+
+        .details-container .about-nanny .datetime .time .time-part {
+            white-space: nowrap
+        }
+
+        .details-container .about-nanny .hr-sep-nanny {
+            margin-bottom: 25px;
+            margin-top: 25px
+        }
+
+        .details-container .about-nanny .title {
+            color: #2f2e41;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px
+        }
+
+        .details-container .about-nanny .services .form-item {
+            margin-bottom: 8px
+        }
+
+        .details-container .about-nanny .services .form-item label {
+            cursor: default;
+            font-family: "Source Sans Pro";
+            font-size: 14px;
+            font-weight: 400
+        }
+
+        .details-container .about-nanny .services .form-item .css-checkbox:not(:checked)+label {
+            color: #dadada
+        }
+
+        .details-container .about-nanny .price-details {
+            margin-bottom: 70px
+        }
+
+        .details-container .nanny-opinions {
+            background-color: #fff;
+            min-height: 80vh;
+            padding: 30px 20px
+        }
+
+        .details-container .nanny-opinions .comments-average {
+            float: right;
+            font-family: Catamaran;
+            font-size: 16px
+        }
+
+        .details-container .nanny-opinions .comments-average .average {
+            margin-right: 2px
+        }
+
+        .details-container .nanny-opinions .comments-average .number {
+            margin-left: 2px
+        }
+
+        .details-container .nanny-opinions .comments-average .nanny-icon {
+            height: 18px;
+            vertical-align: text-bottom;
+            width: 18px
+        }
+
+        .details-container .nanny-opinions .comments-average .all-stars {
+            display: inline
+        }
+
+        .details-container .nanny-opinions .comments {
+            padding-bottom: 80px
+        }
+
+        .details-container .nanny-opinions .comments .comment {
+            margin-top: 30px
+        }
+
+        .details-container .nanny-opinions .comments .top-part {
+            margin-bottom: 12px
+        }
+
+        .details-container .nanny-opinions .comments .top-part .user-infos {
+            font-size: 14px
+        }
+
+        .details-container .nanny-opinions .comments .top-part .user-infos .picture {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 20px;
+            height: 40px;
+            margin-right: 10px;
+            width: 40px
+        }
+
+        .details-container .nanny-opinions .comments .top-part .name-date .date {
+            color: #717b88;
+            font-size: 14px
+        }
+
+        .details-container .nanny-opinions .comments .top-part .no-comment-r {
+            color: #717b88
+        }
+
+        .details-container .nanny-opinions .comments .top-part .stars .all-stars {
+            float: right;
+            margin-top: 18px
+        }
+
+        .details-container .nanny-opinions .comments .top-part .stars .all-stars .nanny-icon {
+            height: 18px;
+            vertical-align: text-bottom;
+            width: 18px
+        }
+
+        .warning-block {
+            background-color: #fff;
+            padding: 15px 25px 10px
+        }
+
+        .warning-block.empty-block {
+            padding-bottom: 0
+        }
+
+        @media (max-width:992px) {
+            .warning-block.empty-block {
+                padding-top: 0
+            }
+
+            .warning-block {
+                padding-left: 20px;
+                padding-top: 0
+            }
+        }
+
+        .warning-block .block-nanny-warning {
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 5px;
+            padding: 8px 15px
+        }
+
+        .warning-block .block-nanny-warning.highly {
+            background-color: #f0eff4
+        }
+
+        .warning-block .block-nanny-warning.highly b {
+            color: #575a89
+        }
+
+        .warning-block .block-nanny-warning.premium {
+            background-color: #fff2de
+        }
+
+        .warning-block .block-nanny-warning.premium b {
+            color: #c6ad29
+        }
+
+        .warning-block .block-nanny-warning.stock {
+            background-color: #eff4f0;
+            color: #3b733d;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+
+        .warning-block .block-nanny-warning .nanny-icon {
+            margin-right: 5px
+        }
+
+        .nanny-pois {
+            line-height: 22px
+        }
+
+        .nanny-pois .poi-type {
+            font-weight: 700;
+            margin-bottom: 2px
+        }
+
+        .nanny-pois .poi-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px
+        }
+
+        .nanny-pois .poi-item.last {
+            margin-bottom: 22px
+        }
+
+        .nanny-pois .poi-item .distance-poi {
+            color: #c4c4c4
+        }
+
+        .nanny-details {
+            font-size: 16px
+        }
+
+        .back-button-result {
+            color: #000 !important;
+            font-size: 15px;
+            margin-left: 25px;
+            margin-top: 20px;
+            padding: 7px 20px
+        }
+
+        .text-line {
+            color: #c4c4c4;
+            -webkit-text-decoration: line-through;
+            text-decoration: line-through
+        }
+
+        .nanny-infos .street {
+            line-height: inherit
+        }
+
+        .nanny-infos .type {
+            color: #717b88;
+            float: left;
+            font-size: 14px
+        }
+
+        .nanny-infos .distance {
+            font-size: 14px;
+            line-height: inherit
+        }
+
+        .nanny-infos .type-point {
+            margin-left: 5px;
+            margin-right: 7px;
+            max-width: 15px
+        }
+
+        .nanny-infos .type,
+        .nanny-infos .type-point {
+            color: #717b88;
+            float: left;
+            font-size: 14px;
+            max-width: 123px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .nanny-infos .nanny-stars {
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .nanny-infos .nanny-stars .all-stars {
+            margin-right: 5px
+        }
+
+        .nanny-infos .nanny-stars .reviews-count {
+            color: #717b88;
+            margin-left: 3px
+        }
+
+        .nanny-infos .nanny-separator-info {
+            margin-bottom: 5px;
+            margin-top: 12px
+        }
+
+        .nanny-card-bg .booking-price {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            justify-content: center
+        }
+
+        .nanny-card-bg .booking-price.price-info-b {
+            font-size: 18px
+        }
+
+        .nanny-card-bg .booking-price.price-info-b .small-info {
+            font-size: 14px
+        }
+
+        .nanny-card-bg .booking-price .bold-price {
+            font-size: 17px;
+            font-weight: 800
+        }
+
+        .nanny-card-bg .booking-price .date-price {
+            cursor: pointer;
+            font-size: 13px;
+            -webkit-text-decoration: underline;
+            text-decoration: underline
+        }
+
+        .details-container .booking-infos {
+            padding-bottom: 0
+        }
+
+        .details-container .booking-infos .booking-price .bold-price {
+            font-size: 17px;
+            font-weight: 800
+        }
+
+        .details-container .booking-infos .booking-price .date-price {
+            cursor: pointer;
+            font-size: 13px;
+            -webkit-text-decoration: underline;
+            text-decoration: underline
+        }
+
+        .resume-review {
+            align-items: center;
+            font-size: 16px;
+            line-height: 18px
+        }
+
+        .resume-review .type-point {
+            font-size: 16px;
+            font-weight: 800;
+            margin-left: 7px;
+            margin-right: 7px
+        }
+
+        .resume-review .star.yellow {
+            height: 20px;
+            margin-right: 10px;
+            width: 20px
+        }
+
+        .comments {
+            font-size: 15px
+        }
+
+        .stars {
+            align-items: baseline;
+            display: flex;
+            justify-content: flex-end
+        }
+
+        .stars .score {
+            font-weight: 700;
+            margin-right: 10px
+        }
+
+        @media (max-width:992px) {
+            .nanny-card-mobile {
+                bottom: 15px;
+                font-family: "Source Sans Pro";
+                left: 0;
+                padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--notch-inset-bottom));
+                padding-left: 15px;
+                padding-right: 15px;
+                position: fixed;
+                width: 100%;
+                z-index: 7
+            }
+
+            .nanny-card-mobile .content-card {
+                background-color: #fff;
+                border-radius: 15px;
+                min-height: 240px;
+                padding: 12px;
+                position: relative;
+                transform: translateY(200%);
+                transition: all .3s ease;
+                width: 100%
+            }
+
+            .nanny-card-mobile .content-card.nanny-selected {
+                transform: translateY(0)
+            }
+
+            .nanny-card-mobile .content-card .small-modal-close {
+                position: fixed;
+                right: 12px;
+                top: -20px;
+                z-index: 1
+            }
+
+            .nanny-card-mobile .price-info {
+                font-size: 18px
+            }
+
+            .nanny-card-mobile .price-info .small-info {
+                font-size: 14px
+            }
+
+            .nanny-card-mobile .nanny-card {
+                background-color: #fff;
+                border-bottom: 1px solid #eaeaea;
+                display: block;
+                margin-bottom: 10px;
+                padding: 0 0 10px;
+                position: relative
+            }
+
+            .nanny-card-mobile .nanny-card .highly-block {
+                display: flex;
+                position: absolute;
+                right: 0;
+                top: 20px
+            }
+
+            .nanny-card-mobile .nanny-card .highly-block .high-inside {
+                background-color: #f0eff4;
+                border-radius: 5px;
+                margin-right: 5px;
+                padding: 2px 5px
+            }
+
+            .nanny-card-mobile .nanny-card .highly-block .premium-inside {
+                background-color: #fff2de;
+                border-radius: 5px;
+                padding: 2px 5px
+            }
+
+            .nanny-card-mobile .nanny-card .picture {
+                background-position: 50%;
+                background-size: cover;
+                border-radius: 8px;
+                float: left;
+                height: 55px;
+                margin-right: 12px;
+                margin-top: 4px;
+                width: 55px
+            }
+
+            .nanny-card-mobile .nanny-card .luggage-storage-title {
+                font-size: 15px;
+                font-weight: 700
+            }
+
+            .nanny-card-mobile .nanny-card .street {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: inherit;
+                margin-bottom: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+
+            .nanny-card-mobile .nanny-card .type {
+                color: #717b88;
+                font-size: 14px;
+                max-width: 145px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+
+            .nanny-card-mobile .nanny-card .nanny-score-top {
+                display: none !important
+            }
+
+            .nanny-card-mobile .nanny-card .is-open {
+                font-size: 15px
+            }
+
+            .nanny-card-mobile .nanny-card .is-open.de,
+            .nanny-card-mobile .nanny-card .is-open.it {
+                font-size: 14px
+            }
+
+            .nanny-card-mobile .nanny-card .is-open .open {
+                color: #00811e
+            }
+
+            .nanny-card-mobile .nanny-card .is-open .closed {
+                color: #e88600
+            }
+
+            .nanny-card-mobile .nanny-card .distance {
+                align-items: center;
+                display: flex;
+                font-size: 15px;
+                font-weight: 800;
+                margin-top: 20px
+            }
+
+            .nanny-card-mobile .nanny-card .distance .nanny-icon {
+                margin-right: 7px
+            }
+
+            .nanny-card-mobile .nanny-card .distance .chevron-right {
+                height: 8px;
+                margin-left: 1px !important;
+                margin-right: 1px !important;
+                width: 6px
+            }
+
+            .nanny-card-mobile .nanny-card .type-point {
+                display: none
+            }
+
+            .nanny-card-mobile .nanny-card .mobile-details-nanny {
+                display: flex;
+                font-size: 15px;
+                margin-top: 11px
+            }
+
+            .nanny-card-mobile .nanny-card .mobile-details-nanny .fl-b-auto {
+                flex-basis: auto
+            }
+
+            .nanny-card-mobile .nanny-card .mobile-details-nanny p {
+                color: #717b88;
+                font-size: 14px;
+                margin-bottom: 3px
+            }
+
+            .nanny-card-mobile .nanny-card .mobile-details-nanny .is-open {
+                font-weight: 700
+            }
+
+            .nanny-card-mobile .nanny-card .pl-42 {
+                padding-left: 10px
+            }
+
+            .nanny-card-mobile .nanny-card .nanny-stars {
+                align-items: center;
+                font-size: 15px;
+                font-weight: 700
+            }
+
+            .nanny-card-mobile .nanny-card .nanny-stars .all-stars {
+                margin-right: 5px
+            }
+
+            .nanny-card-mobile .nanny-card .nanny-stars .reviews-count {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                color: #717b88;
+                display: -webkit-box;
+                margin-left: 0;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .nanny-map .map-details .mobile-details-bg {
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                position: fixed;
+                transition: all .3s ease;
+                width: 100%;
+                z-index: 202
+            }
+
+            .nanny-map .map-details .details-container {
+                -webkit-overflow-scrolling: touch;
+                background: 0 0;
+                overflow-y: auto;
+                position: fixed;
+                transition: all .3s ease;
+                width: 100%;
+                z-index: 20
+            }
+
+            .nanny-map .map-details .details-container .picture-close {
+                left: 0;
+                margin-left: 10px;
+                position: absolute;
+                top: 0
+            }
+
+            .nanny-map .map-details .details-container .nanny-infos {
+                border-radius: 14px 14px 0 0;
+                margin-bottom: -10px;
+                padding: 15px 20px
+            }
+
+            .nanny-map .map-details .details-container .nanny-infos .luggage-storage-title,
+            .nanny-map .map-details .details-container .nanny-infos .street {
+                font-size: 17px;
+                margin-bottom: 4px
+            }
+
+            .nanny-map .map-details .details-container .accordion-title,
+            .nanny-map .map-details .details-container .nanny-infos .nanny-stars,
+            .nanny-map .map-details .details-container .nanny-infos .type {
+                font-size: 15px
+            }
+
+            .nanny-map .map-details .booking-infos {
+                background-color: #fff;
+                border-radius: 12px 12px 0 0;
+                justify-content: space-between;
+                padding: 20px 15px
+            }
+
+            .nanny-map .map-details .capacity {
+                background-color: #fff
+            }
+
+            .nanny-map .map-details .picture-top {
+                background-color: #bbb;
+                background-position: 50%;
+                background-size: cover;
+                padding-top: 95px;
+                padding-top: calc(95px + env(safe-area-inset-top, 0px) + var(--notch-inset-top));
+                position: fixed;
+                top: 0;
+                transition: all .3s ease;
+                width: 100%
+            }
+
+            .nanny-map .map-details.down .mobile-details-bg {
+                transform: translateY(100%)
+            }
+
+            .nanny-map .map-details.down .picture-top {
+                transform: translateY(35px)
+            }
+
+            .nanny-map .map-details.top .details-container {
+                padding-top: 95px;
+                padding-top: calc(95px + env(safe-area-inset-top, 0px) + var(--notch-inset-top))
+            }
+
+            .nanny-map .map-details.top .mobile-details-bg {
+                background-color: #fff;
+                position: relative
+            }
+
+            .nanny-map .map-details.top .mobile-details-bg.was-open {
+                z-index: 49
+            }
+
+            .nanny-map .map-details.top .picture-close {
+                margin-top: 10px;
+                margin-top: calc(10px + env(safe-area-inset-top, 0px) + var(--notch-inset-top))
+            }
+
+            .nanny-map .map-details.top .nanny-infos {
+                margin-bottom: 0
+            }
+
+            .nanny-map .map-details.top .booking-infos {
+                align-items: center;
+                background-color: #fff;
+                border-radius: 0;
+                border-top: 1px solid #ccc;
+                bottom: 0;
+                padding-bottom: 15px;
+                padding-bottom: calc(15px + env(safe-area-inset-bottom, 0px) + var(--notch-inset-bottom));
+                padding-top: 15px;
+                position: fixed;
+                z-index: 3
+            }
+
+            .nanny-map .map-details.mid .mobile-details-bg {
+                transform: translateY(100%)
+            }
+
+            .nanny-map .map-details.mid .picture-top {
+                transform: translateY(35px)
+            }
+
+            .nanny-map .map-details.mid .details-container {
+                overflow: hidden;
+                padding-top: 30px
+            }
+        }
+
+        .widget .nanny-map .map-panel {
+            height: 100vh
+        }
+
+        .widget .nanny-map .nanny-list.mobile {
+            bottom: 0;
+            height: 100%
+        }
+
+        .widget .nanny-map .nanny-list.mobile.listup {
+            transform: translateY(70px)
+        }
+
+        .widget .nanny-map .map-details-mobile.mid .mobile-details-bg {
+            transform: translateY(calc(100vh - 230px))
+        }
+
+        .widget .nanny-map .map-button.toggle-subway {
+            bottom: 15px
+        }
+
+        .widget .nanny-map .map-button.position {
+            bottom: 65px
+        }
+
+        .widget .nanny-map .map-button.map-list {
+            bottom: 50px
+        }
+
+        @media (min-width:992px) {
+            .widget .nanny-map .map-panel {
+                height: 100vh
+            }
+
+            .widget .nanny-map .nanny-list {
+                bottom: 0;
+                height: 100%
+            }
+
+            .widget .nanny-map .nanny-list.listup {
+                transform: translateY(70px)
+            }
+        }
+
+        .tp-widget-wrapper {
+            height: 100%;
+            left: 0;
+            margin-top: 40px;
+            position: absolute;
+            text-align: left;
+            top: 100%
+        }
+
+        @media screen and (max-width:300px) {
+            .tp-widget-wrapper {
+                text-align: left
+            }
+
+            .tp-widget-trustscore {
+                font-size: 14px;
+                margin: 0 0 6px
+            }
+
+            .tp-widget-logo {
+                margin: 0 auto;
+                width: 65px
+            }
+        }
+
+        @media screen and (min-width:200px) {
+            .tp-widget-wrapper {
+                font-size: 0
+            }
+
+            .tp-widget-trustscore {
+                font-size: 14px;
+                margin: 0 12px 8px 0
+            }
+
+            .tp-widget-logo {
+                width: 72px
+            }
+        }
+
+        @media screen and (min-width:260px) {
+            .tp-widget-logo {
+                display: inline-block;
+                margin: 0 0 8px;
+                vertical-align: middle
+            }
+        }
+
+        .tp-widget-stars-block {
+            height: 0;
+            padding: 0 0 18.326693227091635%;
+            position: relative;
+            width: 100%
+        }
+
+        .tp-stars .tp-star__canvas,
+        .tp-stars .tp-star__canvas--half {
+            fill: #dcdce6
+        }
+
+        .tp-stars .tp-star__shape {
+            fill: #fff
+        }
+
+        .tp-stars--1 .tp-star:nth-of-type(-n+1) .tp-star__canvas,
+        .tp-stars--1 .tp-star:nth-of-type(-n+1) .tp-star__canvas--half {
+            fill: #ff3722
+        }
+
+        .tp-stars--2 .tp-star:nth-of-type(-n+2) .tp-star__canvas,
+        .tp-stars--2 .tp-star:nth-of-type(-n+2) .tp-star__canvas--half {
+            fill: #ff8622
+        }
+
+        .tp-stars--3 .tp-star:nth-of-type(-n+3) .tp-star__canvas,
+        .tp-stars--3 .tp-star:nth-of-type(-n+3) .tp-star__canvas--half {
+            fill: #ffce00
+        }
+
+        .tp-stars--4 .tp-star:nth-of-type(-n+4) .tp-star__canvas,
+        .tp-stars--4 .tp-star:nth-of-type(-n+4) .tp-star__canvas--half {
+            fill: #73cf11
+        }
+
+        .tp-stars--5 .tp-star:nth-of-type(-n+5) .tp-star__canvas,
+        .tp-stars--5 .tp-star:nth-of-type(-n+5) .tp-star__canvas--half {
+            fill: #00b67a
+        }
+
+        .tp-stars--1--half .tp-star:nth-of-type(-n+2) .tp-star__canvas--half {
+            fill: #ff3722
+        }
+
+        .tp-stars--2--half .tp-star:nth-of-type(-n+3) .tp-star__canvas--half {
+            fill: #ff8622
+        }
+
+        .tp-stars--3--half .tp-star:nth-of-type(-n+4) .tp-star__canvas--half {
+            fill: #ffce00
+        }
+
+        .tp-stars--4--half .tp-star:nth-of-type(-n+4) .tp-star__canvas,
+        .tp-stars--4--half .tp-star:nth-of-type(-n+4) .tp-star__canvas--half,
+        .tp-stars--4--half .tp-star:nth-of-type(-n+5) .tp-star__canvas--half {
+            fill: #00b67a
+        }
+
+        @media screen and (max-width:300px) {
+            .tp-widget-stars {
+                margin: 0 auto 6px;
+                max-width: 100%;
+                width: 110px
+            }
+        }
+
+        @media screen and (min-width:200px) {
+            .tp-widget-stars {
+                margin: 0 0 8px;
+                width: 100px
+            }
+        }
+
+        @media screen and (min-width:260px) {
+            .tp-widget-stars {
+                margin: 0 8px 8px 0
+            }
+        }
+
+        @keyframes uil-default-anim {
+            0% {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .uil-default-css {
+            background: 0 0;
+            height: 100%;
+            position: relative;
+            width: 100%
+        }
+
+        .uil-default-css>div {
+            animation: uil-default-anim 1s linear infinite
+        }
+
+        .uil-default-css>div:first-of-type {
+            animation-delay: -.5s
+        }
+
+        .uil-default-css>div:nth-of-type(2) {
+            animation-delay: -.4166666666666667s
+        }
+
+        .uil-default-css>div:nth-of-type(3) {
+            animation-delay: -.33333333333333337s
+        }
+
+        .uil-default-css>div:nth-of-type(4) {
+            animation-delay: -.25s
+        }
+
+        .uil-default-css>div:nth-of-type(5) {
+            animation-delay: -.16666666666666669s
+        }
+
+        .uil-default-css>div:nth-of-type(6) {
+            animation-delay: -.08333333333333331s
+        }
+
+        .uil-default-css>div:nth-of-type(7) {
+            animation-delay: 0s
+        }
+
+        .uil-default-css>div:nth-of-type(8) {
+            animation-delay: .08333333333333337s
+        }
+
+        .uil-default-css>div:nth-of-type(9) {
+            animation-delay: .16666666666666663s
+        }
+
+        .uil-default-css>div:nth-of-type(10) {
+            animation-delay: .25s
+        }
+
+        .uil-default-css>div:nth-of-type(11) {
+            animation-delay: .33333333333333337s
+        }
+
+        .uil-default-css>div:nth-of-type(12) {
+            animation-delay: .41666666666666663s
+        }
 
 .openbtn:hover {
   background-color: #444;

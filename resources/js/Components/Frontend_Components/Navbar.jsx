@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container-home">
         <div className="bar-home-menu">
           <div>
-            <a href="/en" aria-current="page" title="Nannybag" className="nuxt-link-exact-active nuxt-link-active">
+            <a href={route('home')} aria-current="page" title="Nannybag" className="nuxt-link-exact-active nuxt-link-active">
               <div className="menu-logo"><img src="./assets/images/logo_blanc.52bbce7.png" alt="" /></div>
             </a>
             <div className="desktop hide-tablet top-menu-v2 book-menu-bar"></div>
@@ -88,7 +88,8 @@ const Navbar = () => {
               </div>
               <input value="Login" type="button" className="margin-t-10 nanny-btn-login d-md-none" />
               <div className="login-subtitle">
-                No account? <span className="font-weight-bold color-nanny underline cursor-pointer">Register</span>
+                <a href={route('register')}> No account? <spen className="color-nanny cursor-pointer">Register</spen></a>
+               
               </div>
             </div>
           </div>

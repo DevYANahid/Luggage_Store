@@ -25,9 +25,9 @@ const Price = () => {
                                         expectations</span>
                                 </div>
                             </div>
-                            <div class="hide-tablet"><button class="nanny-button rework big">
+                            <div class="hide-tablet"><a href={route('storage')}><button class="nanny-button rework big">
                                 Book luggage storage
-                            </button></div>
+                            </button></a></div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="rates-bg">

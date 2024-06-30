@@ -63,7 +63,7 @@ const Header = () => {
                         <p>Add Number of Bag</p>
                     </div>
                 </form>
-                <button class="btn"><i class="ri-search-line"></i></button>
+                <button  class="btn"><a href={route('storage')}><i class="ri-search-line"></i></a></button>
             </div>
         </div>
     </header>  
