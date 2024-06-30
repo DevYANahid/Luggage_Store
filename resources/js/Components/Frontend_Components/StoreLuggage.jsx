@@ -57,7 +57,7 @@ const StoreLuggage = () => {
                                         <span className="nanny-icon highly"></span>
                                     </div>
                                 </div>
-                                <div className="picture TOURIST_OFFICE"></div>
+                                <div className="picture"><img src="./assets/images/client-1.jpg" alt="" /></div>
                                 <div className="info">
                                     <div className="luggage-storage-title">
                                         Luggage storage
@@ -166,7 +166,7 @@ const StoreLuggage = () => {
                                         <span className="nanny-icon highly"></span>
                                     </div>
                                 </div>
-                                <div className="picture OTHER"></div>
+                                <div className="picture"><img src="./assets/images/client-2.jpg" alt="" /></div>
                                 <div className="info">
                                     <div className="luggage-storage-title">
                                         Luggage storage
