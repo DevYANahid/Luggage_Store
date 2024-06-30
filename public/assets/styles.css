@@ -13960,4 +13960,1153 @@ h2 {
   }
 }
 
+/* registration */
+
+.search-luggage-v2 {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.search-luggage-v3,
+.search-luggage-v3 .search-input-bar {
+    display: flex;
+    justify-content: space-between
+}
+
+.search-luggage-v3 .search-input-bar {
+    align-items: center
+}
+
+.search-luggage-v3 .flex-center {
+    align-items: center;
+    display: flex
+}
+
+.search-luggage-v3 .luggage-button-box {
+    align-items: center;
+    border: initial;
+    border-radius: 0;
+    border-radius: initial;
+    cursor: pointer;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    width: 35px
+}
+
+.search-luggage-v3 .luggage-button-box .nanny-icon {
+    margin: 0 !important
+}
+
+.search-luggage-v3 .luggage-popup .luggage-button-box {
+    background-color: #f8f8fb;
+    border: none
+}
+
+.search-luggage-v3 .number {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 34px;
+    text-align: center
+}
+
+.search-luggage-v2 .search-input-bar,
+.search-luggage-v2-small .search-input-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+.search-luggage-v2 .number,
+.search-luggage-v2-small .number {
+    margin-left: 10px
+}
+
+.search-luggage-v2 .flex-center,
+.search-luggage-v2-small .flex-center {
+    align-items: center;
+    display: flex
+}
+
+.search-luggage-v2 .luggage-button-box,
+.search-luggage-v2-small .luggage-button-box {
+    align-items: center;
+    background-color: #f8f8fb;
+    cursor: pointer;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    width: 35px
+}
+
+.search-luggage-v2 .luggage-button-box:first-child,
+.search-luggage-v2-small .luggage-button-box:first-child {
+    margin-right: 10px
+}
+
+.search-luggage-v2-small .head p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.search-luggage-v2-small .head .detail {
+    color: #717b88;
+    font-size: 14px
+}
+
+.search-luggage-v2-small .count {
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    min-width: 40px
+}
+
+.search-luggage-v2-small .luggage-button-box {
+    border-radius: 5px
+}
+
+.search-luggage-v2-small .luggage-button-box:first-child {
+    margin-right: 0
+}
+
+.luggage-popup {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    bottom: 0;
+    box-shadow: 0 2px 4px 0 #dadada;
+    height: auto;
+    left: 0;
+    padding: 38px 20px 15px;
+    width: 100% !important
+}
+
+.luggage-popup .field-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px
+}
+
+.luggage-popup .detail {
+    color: #717b88;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px
+}
+
+.luggage-popup .nanny-button {
+    margin-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--notch-inset-bottom));
+    width: 100%
+}
+
+@media (max-width:992px) {
+    .search-luggage-v2-small .head p {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        margin-bottom: 6px
+    }
+
+    .search-luggage-v2-small .head .detail {
+        font-size: 14px
+    }
+}
+
+
+.content-row .content-lg.payment-content {
+    font-size: 15px;
+    margin-top: 30px
+}
+
+.ApplePayButton {
+    -webkit-appearance: -apple-pay-button !important;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    height: 52px;
+    max-height: 64px;
+    min-height: 52px
+}
+
+.ApplePayButton--book {
+    -apple-pay-button-type: book
+}
+
+.ApplePayButton--dark {
+    -apple-pay-button-style: #000
+}
+
+.GooglePayButton {
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 52px;
+    max-height: 64px;
+    min-height: 32px;
+    opacity: 1
+}
+
+.nanny-icon.GooglePayButton-logo {
+    background-image: url(/dist/img/book-gpay.26f676b.svg);
+    height: 21px;
+    width: 100%
+}
+
+.GooglePayButton--dark {
+    background-color: #000
+}
+
+.GooglePayButton--dark:focus,
+.GooglePayButton--dark:hover {
+    background-color: #3c4043
+}
+
+.GooglePayButton--dark:active {
+    background-color: #5f6368
+}
+
+.payment {
+    margin-right: 50px
+}
+
+.payment .or-separator {
+    background: none;
+    height: 34px;
+    position: relative;
+    text-align: center;
+    width: 60%
+}
+
+.payment .or-separator hr {
+    margin: -17px auto 10px;
+    width: 100%
+}
+
+.payment #payment-request-button {
+    width: 60%
+}
+
+.payment .or-separator-text {
+    background-color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    max-height: 34px;
+    padding: 7px
+}
+
+.payment .pay-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.payment .pay-title h2 {
+    margin-bottom: 20px
+}
+
+.payment .pay-with {
+    display: flex;
+    justify-content: flex-end
+}
+
+.payment .pay-with .payment-type-icon {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2px;
+    height: 16px;
+    margin-right: 5px;
+    width: 30px
+}
+
+.payment .pay-with .payment-type-icon.apple-pay {
+    background-image: url(/dist/img/applepay.04030e6.svg)
+}
+
+.payment .pay-with .payment-type-icon.google-pay {
+    background-image: url(/dist/img/googlepay.c552fc5.png)
+}
+
+.payment .pay-with .payment-type-icon.cb {
+    background-image: url(/dist/img/cb.2069487.jpg)
+}
+
+.payment .pay-with .payment-type-icon.visa {
+    background-image: url(/dist/img/visa.1abc1c2.svg)
+}
+
+.payment .pay-with .payment-type-icon.master-card {
+    background-image: url(/dist/img/mastercard.42619ed.png)
+}
+
+.payment .pay-with .payment-type-icon.amex {
+    background-image: url(/dist/img/amex.a1b5380.png)
+}
+
+.payment .pay-with .card-type-not-selected {
+    opacity: .4
+}
+
+.payment .validation-message {
+    margin-bottom: 8px
+}
+
+.payment .cvc {
+    display: inline-block;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.payment .drop-up {
+    float: right;
+    position: relative
+}
+
+.payment .drop-up i {
+    font-size: 20px
+}
+
+.payment .padlock {
+    margin-bottom: -2px
+}
+
+.payment #cvcTooltip {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    left: -260px;
+    margin-right: 15px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 260px
+}
+
+.payment #cvcTooltip:focus {
+    outline: none
+}
+
+.payment .extras-part {
+    margin-bottom: 20px
+}
+
+.payment .uil-default-css {
+    float: left;
+    height: auto;
+    transform: scale(.13);
+    width: auto
+}
+
+.payment .nanny-button {
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.payment .text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+@media (max-width:992px) {
+    .content-row .content-lg.payment-content {
+        margin-top: 0;
+        padding-left: 5px !important;
+        padding-right: 5px !important
+    }
+
+    .content-row .content-lg.payment-content .back-button {
+        border: initial;
+        border-radius: 0;
+        display: block;
+        float: left;
+        height: 30px;
+        margin-bottom: 0;
+        padding: 0;
+        width: 30px
+    }
+
+    .payment {
+        margin-right: 0;
+        padding-bottom: 170px;
+        padding-top: 20px
+    }
+
+    .payment #payment-request-button,
+    .payment .or-separator {
+        width: 100%
+    }
+
+    #bagsShipment .payment {
+        padding-bottom: 0;
+        position: static
+    }
+
+    #bagsShipment .payment .bottom-mobile {
+        display: none
+    }
+
+    #bagsShipment.extra-payment {
+        background-color: #fff;
+        margin-bottom: 100px;
+        min-height: 100%;
+        padding-top: 5px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 275
+    }
+
+    #bagsShipment.extra-payment .back-button {
+        border: initial;
+        border-radius: 0;
+        display: block;
+        float: left;
+        height: 30px;
+        margin-bottom: 0;
+        padding: 0;
+        width: 30px
+    }
+}
+
+.extra-payment .mt-p {
+    margin-top: -1px
+}
+
+.extra-payment .underline.terms:hover {
+    color: #0b0b0b
+}
+
+.extra-payment .mobile-form .mobile-modal-content {
+    padding-top: 0;
+    text-align: left
+}
+
+.extra-payment .mobile-form .mobile-modal-content .mb-4 {
+    margin-bottom: 0 !important;
+    margin-left: -1.5rem
+}
+
+.extra-payment .mobile-form .mobile-modal-content .back-button-modal.no-slot {
+    display: none
+}
+
+.extra-payment .mobile-form .mobile-modal-content .top-fixed-mobile-modal {
+    background: #fff;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%
+}
+
+.extra-payment .mobile-form .h2-mobile-head {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 75px;
+    text-align: left
+}
+
+.extra-payment .login-or {
+    font: normal normal 400 13px/15px Source Sans Pro;
+    margin-bottom: 15px;
+    margin-top: 15px
+}
+
+.extra-payment .warning-address {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.extra-payment .back-button {
+    border: 0;
+    float: left;
+    margin-bottom: 0;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-top: 12px
+}
+
+.extra-payment .back-button .left-icon {
+    height: 13px;
+    width: 7px
+}
+
+.extra-payment .payment-form-login,
+.extra-payment .payment-mobile-form-login {
+    background: #eff0f7;
+    padding: 24px 30px
+}
+
+.extra-payment .payment-form-login .mobile-modal,
+.extra-payment .payment-mobile-form-login .mobile-modal {
+    background-color: #fff;
+    padding-top: 5px;
+    padding-top: calc(5px + env(safe-area-inset-top, 0px) + var(--notch-inset-top))
+}
+
+.extra-payment .payment-form-login .mobile-modal input[type=submit],
+.extra-payment .payment-mobile-form-login .mobile-modal input[type=submit] {
+    display: none
+}
+
+.extra-payment .payment-form-login .mobile-modal .nanny-btn-login.visible,
+.extra-payment .payment-mobile-form-login .mobile-modal .nanny-btn-login.visible {
+    display: block !important
+}
+
+.extra-payment h1 {
+    color: #2f2e41;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 0
+}
+
+.extra-payment h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0
+}
+
+.extra-payment .middle-separator {
+    margin-bottom: 30px;
+    margin-top: 40px
+}
+
+.extra-payment .sections-title {
+    display: none
+}
+
+.extra-payment .date-change {
+    border: initial;
+    padding: 0
+}
+
+.extra-payment .date-change .dropdown-menu {
+    margin-top: 10px
+}
+
+.extra-payment .date-change .nanny-icon.calendar {
+    display: none
+}
+
+.extra-payment .date-change .dates {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.extra-payment .date-change .dates .vdatetime {
+    border: 1px solid #e4e4e4 !important;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 8px;
+    position: relative;
+    width: 50%
+}
+
+.extra-payment .date-change .dates .vdatetime:last-child {
+    margin-left: 5px;
+    margin-right: 0
+}
+
+.extra-payment .date-change .dates .vdatetime .calendar {
+    display: none
+}
+
+.extra-payment .date-change .dates .vdatetime a {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 100%
+}
+
+.extra-payment .date-change .dates .vdatetime p {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px
+}
+
+@media (max-width:992px) {
+    .content-row .content-lg {
+        margin-top: 0
+    }
+
+    .extra-payment .date-change {
+        border: initial;
+        padding: 0
+    }
+
+    .extra-payment .date-change .dropdown-menu {
+        margin-top: 10px
+    }
+
+    .extra-payment .date-change .nanny-icon.calendar {
+        display: none
+    }
+
+    .extra-payment .date-change .dates {
+        width: 100%
+    }
+
+    .extra-payment .date-change .dates .vdatetime {
+        border: 1px solid #e4e4e4 !important;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-right: 5px;
+        padding: 8px;
+        width: 50%
+    }
+
+    .extra-payment .date-change .dates .vdatetime:last-child {
+        margin-left: 5px;
+        margin-right: 0
+    }
+
+    .extra-payment .date-change .dates .vdatetime a {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 25px;
+        width: 100%
+    }
+
+    .extra-payment .date-change .dates .vdatetime p {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 6px
+    }
+
+    .extra-payment {
+        background-color: #fff;
+        padding-top: 5px;
+        position: fixed;
+        width: 100%;
+        z-index: 275
+    }
+
+    .extra-payment .sections-title {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        margin-bottom: 6px
+    }
+
+    .extra-payment .price-info {
+        margin-top: 12px
+    }
+
+    .extra-payment .top-menu-shift {
+        display: none
+    }
+
+    .extra-payment .left-icon {
+        height: 13px;
+        width: 7px
+    }
+
+    .extra-payment h1 {
+        font-size: 17px;
+        line-height: 1em;
+        margin-left: -35px;
+        text-align: center;
+        width: 100%
+    }
+
+    .extra-payment h1,
+    .extra-payment h2 {
+        margin-bottom: 20px
+    }
+
+    .extra-payment .top-separator {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 0
+    }
+
+    .extra-payment .middle-separator {
+        margin-bottom: 25px;
+        margin-top: 25px
+    }
+
+    .extra-payment .place-infos {
+        margin-top: 30px
+    }
+
+    .extra-payment .terms-condition {
+        font-size: 13px
+    }
+
+    .extra-payment .terms-condition h2 {
+        font-size: 16px;
+        margin-bottom: 15px
+    }
+
+    .extra-payment .terms-condition .content-condition {
+        color: #818181
+    }
+
+    #bookingDepositDateTimeUniversal-drop-down {
+        margin-left: 4px
+    }
+
+    #bookingDepositDateTimeUniversal-drop-down:before {
+        margin-left: 7px
+    }
+
+    #bookingWithdrawalDateTimeUniversal-drop-down {
+        margin-left: 4px
+    }
+
+    #bagsShipment.extra-payment .top-menu-shift {
+        display: block
+    }
+}
+
+@media (max-width:768px) {
+    #bookingWithdrawalDateTimeUniversal-drop-down {
+        margin-left: -45px
+    }
+}
+
+@media (max-width:490px) {
+    #bookingWithdrawalDateTimeUniversal-drop-down {
+        margin-left: -125px
+    }
+}
+
+@media (max-width:325px) {
+    #bookingWithdrawalDateTimeUniversal-drop-down {
+        margin-left: -145px
+    }
+}
+
+.payment-methods-container .nanny-button:focus {
+    outline: none
+}
+
+.payment-methods-container .tips {
+    color: var(--main-color);
+    font-size: 12px
+}
+
+.payment-methods-container .payment-card {
+    height: auto;
+    margin: 20px 0;
+    padding: 3px 20px 3px 10px
+}
+
+.payment-methods-container .payment-card.add {
+    padding: 14px
+}
+
+.payment-methods-container .add-payment {
+    align-items: center;
+    cursor: pointer;
+    display: flex
+}
+
+.payment-methods-container .add-icon {
+    float: left;
+    margin-right: 10px
+}
+
+.payment-methods-container .drop-up {
+    color: #d8d8d8;
+    float: right;
+    position: relative
+}
+
+.payment-methods-container .drop-up i {
+    font-size: 20px
+}
+
+.payment-methods-container #cvcTooltip {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    color: #4a4a4a;
+    left: -260px;
+    margin-right: 15px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 260px
+}
+
+.payment-methods-container #cvcTooltip:focus {
+    outline: none
+}
+
+@media (max-width:576px) {
+    .payment-methods-container .payment-card {
+        padding: 10px 20px 5px 10px
+    }
+
+    .payment-methods-container .payment-card.add {
+        height: 45px
+    }
+}
+
+.payment-methods-container .card-detail {
+    display: block
+}
+
+.payment-methods-container .delete-link {
+    display: flex;
+    justify-content: flex-end;
+    width: 62%
+}
+
+.payment-select {
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 12px;
+    position: relative
+}
+
+.payment-select:focus {
+    outline: none
+}
+
+.payment-select .dropdown-menu {
+    top: 97%
+}
+
+.card-detail {
+    align-items: center;
+    display: flex;
+    font-size: 14px
+}
+
+@media (max-width:768px) {
+    .card-detail {
+        display: block
+    }
+}
+
+.card-type {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2px;
+    height: 20px;
+    margin-right: 5px;
+    width: 30px
+}
+
+.card-type.cb,
+.card-type.unknow {
+    background-image: url(/dist/img/cb.2069487.jpg)
+}
+
+.card-type.visa {
+    background-image: url(/dist/img/visa.1abc1c2.svg)
+}
+
+.card-type.jcb {
+    background-image: url(/dist/img/JCB.3cfa1cc.png)
+}
+
+.card-type.mastercard {
+    background-image: url(/dist/img/mastercard.42619ed.png)
+}
+
+.card-type.amex {
+    background-image: url(/dist/img/amex.a1b5380.png)
+}
+
+.rnd-digit {
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    height: 4px;
+    margin-right: 2px;
+    width: 4px
+}
+
+.invoice {
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+
+.invoice .invoice-content {
+    padding: 22px
+}
+
+.invoice .invoice-content .cancel {
+    background-color: #fff7f6;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px
+}
+
+.invoice .invoice-content .cancel .title {
+    color: var(--main-color);
+    font-weight: 700
+}
+
+.invoice .invoice-content .cancel .paragraph {
+    font-size: 12px
+}
+
+.invoice .invoice-content .cancel .icon .nanny-icon {
+    margin-right: 10px;
+    margin-top: 20px
+}
+
+.invoice .invoice-content .separator {
+    border-bottom: 1px solid #e4e4e4;
+    height: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%
+}
+
+.invoice .invoice-content .title {
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+.invoice .invoice-content .title-alert {
+    color: var(--main-color);
+    font-weight: 700
+}
+
+.invoice .invoice-content .infos-part {
+    font-size: 15px;
+    margin-bottom: 20px
+}
+
+.invoice .invoice-content .infos-part.top-part {
+    margin-bottom: 10px
+}
+
+.invoice .invoice-content .infos-part.bottom-part {
+    margin-bottom: 0
+}
+
+.invoice .invoice-content .infos-part .row div {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.invoice .invoice-content .infos-part .minus,
+.invoice .invoice-content .infos-part .plus {
+    height: 20px;
+    width: 20px
+}
+
+.invoice .invoice-content .infos-part .total {
+    font-size: 16px
+}
+
+.invoice .invoice-content .price-info .value {
+    font-weight: 700
+}
+
+.place-infos {
+    display: flex
+}
+
+.place-infos .type-icon {
+    background-position: 50%;
+    background-size: contain;
+    height: 36px;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+    position: absolute;
+    top: 50%;
+    width: 36px
+}
+
+.place-infos .place-text {
+    flex: 1 1 60%
+}
+
+.place-infos .place-text .type {
+    line-height: 19px;
+    margin-top: 4px
+}
+
+.place-infos .place-text .all-stars {
+    display: inline-block;
+    margin-right: 6px
+}
+
+.place-infos .place-text .all-stars .empty-star,
+.place-infos .place-text .all-stars .star {
+    height: 15px;
+    vertical-align: middle;
+    width: 15px
+}
+
+.place-infos .place-text .number {
+    float: none;
+    font-weight: 400
+}
+
+.place-infos .place-text .average {
+    font-size: 14px;
+    font-weight: 700
+}
+
+.place-infos .place-text .reviews-count {
+    color: #818181;
+    font-weight: 700
+}
+
+.place-infos .place-pic {
+    display: flex;
+    flex: 1 1 40%;
+    justify-content: flex-end;
+    text-align: right
+}
+
+.place-infos .place-pic .top-image {
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 5px;
+    height: 66px;
+    position: relative;
+    width: 130px
+}
+
+.place-infos .address {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.place-infos .nanny-type {
+    color: #717b88
+}
+
+@media (max-width:992px) {
+    .place-infos .nanny-type {
+        color: #818181;
+        font-size: 13px;
+        text-transform: inherit
+    }
+
+    .place-infos .place-text .all-stars .empty-star,
+    .place-infos .place-text .all-stars .star {
+        height: 12px;
+        width: 12px
+    }
+
+    .place-infos .place-text .average {
+        font-size: 12px;
+        font-weight: 700
+    }
+
+    .place-infos .place-text .reviews-count {
+        font-size: 12px
+    }
+}
+
+@media (max-height:450px) {
+    .box-mobile-footer {
+        display: none
+    }
+}
+
+.extras {
+    padding-top: 20px
+}
+
+.extras .extras-part {
+    margin-bottom: 20px
+}
+
+.extras .other-name {
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.extras .other-name .nanny-label {
+    font-weight: 700
+}
+
+.extras .other-name .nanny-input {
+    max-width: 240px
+}
+
+.extras .continue .text {
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.extras .payment {
+    margin-right: 0
+}
+
+.extras .payment .sub-title {
+    font-family: "Oduda Semi Bold";
+    margin-bottom: .5em
+}
+
+.extra-payment .extras .other-name {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.extra-payment .extras .other-name .nanny-input {
+    max-width: none
+}
+
+@media (max-width:992px) {
+    .extras {
+        height: 100%;
+        overflow: auto;
+        padding-bottom: calc(160px + var(--keyboard-height));
+        padding-top: 15px;
+        padding-top: calc(15px + env(safe-area-inset-top, 0px) + var(--notch-inset-top));
+        position: fixed;
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+
+    .extras .luggage-bar,
+    .extras .luggage-bar .mobile,
+    .extras .luggage-bar .mobile .d-flex {
+        width: 100%
+    }
+
+    .extras .other-name .nanny-input {
+        max-width: 100%
+    }
+
+    .extras h2 {
+        margin-bottom: 20px
+    }
+
+    .extras .extras-part {
+        margin-bottom: 10px
+    }
+}
+
+
 
