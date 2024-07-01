@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import React from 'react';
 
 const Navbar = () => {
@@ -14,9 +15,9 @@ const Navbar = () => {
       <div className="container-home">
         <div className="bar-home-menu">
           <div>
-            <a href={route('home')} aria-current="page" title="Nannybag" className="nuxt-link-exact-active nuxt-link-active">
+            <Link href={route('home')} aria-current="page" title="Nannybag" className="nuxt-link-exact-active nuxt-link-active">
               <div className="menu-logo"><img src="./assets/images/logo_blanc.52bbce7.png" alt="" /></div>
-            </a>
+            </Link>
             <div className="desktop hide-tablet top-menu-v2 book-menu-bar"></div>
           </div>
           <div className="d-flex btn-top-bar">
@@ -88,7 +89,7 @@ const Navbar = () => {
               </div>
               <input value="Login" type="button" className="margin-t-10 nanny-btn-login d-md-none" />
               <div className="login-subtitle">
-                <a href={route('register')}> No account? <spen className="color-nanny cursor-pointer">Register</spen></a>
+                <Link href={route('register')}> No account? <spen className="color-nanny cursor-pointer">Register</spen></Link>
                
               </div>
             </div>

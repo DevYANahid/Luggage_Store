@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react'
 import React from 'react'
 
 const Header = () => {
@@ -63,7 +64,7 @@ const Header = () => {
                         <p>Add Number of Bag</p>
                     </div>
                 </form>
-                <button  class="btn"><a href={route('storage')}><i class="ri-search-line"></i></a></button>
+                <button  class="btn"><Link href={route('storage')}><i class="ri-search-line"></i></Link></button>
             </div>
         </div>
     </header>  
