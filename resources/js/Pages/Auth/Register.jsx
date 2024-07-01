@@ -1,126 +1,33 @@
-// import { useEffect } from 'react';
-// import GuestLayout from '@/Layouts/GuestLayout';
-// import InputError from '@/Components/InputError';
-// import InputLabel from '@/Components/InputLabel';
-// import PrimaryButton from '@/Components/PrimaryButton';
-// import TextInput from '@/Components/TextInput';
-// import { Head, Link, useForm } from '@inertiajs/react';
-
-// export default function Register() {
-//     const { data, setData, post, processing, errors, reset } = useForm({
-//         name: '',
-//         email: '',
-//         password: '',
-//         password_confirmation: '',
-//     });
-
-//     useEffect(() => {
-//         return () => {
-//             reset('password', 'password_confirmation');
-//         };
-//     }, []);
-
-//     const submit = (e) => {
-//         e.preventDefault();
-
-//         post(route('register'));
-//     };
-
-//     return (
-//         <GuestLayout>
-//             <Head title="Register" />
-
-//             <form onSubmit={submit}>
-//                 <div>
-//                     <InputLabel htmlFor="name" value="Name" />
-
-//                     <TextInput
-//                         id="name"
-//                         name="name"
-//                         value={data.name}
-//                         className="mt-1 block w-full"
-//                         autoComplete="name"
-//                         isFocused={true}
-//                         onChange={(e) => setData('name', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.name} className="mt-2" />
-//                 </div>
-
-//                 <div className="mt-4">
-//                     <InputLabel htmlFor="email" value="Email" />
-
-//                     <TextInput
-//                         id="email"
-//                         type="email"
-//                         name="email"
-//                         value={data.email}
-//                         className="mt-1 block w-full"
-//                         autoComplete="username"
-//                         onChange={(e) => setData('email', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.email} className="mt-2" />
-//                 </div>
-
-//                 <div className="mt-4">
-//                     <InputLabel htmlFor="password" value="Password" />
-
-//                     <TextInput
-//                         id="password"
-//                         type="password"
-//                         name="password"
-//                         value={data.password}
-//                         className="mt-1 block w-full"
-//                         autoComplete="new-password"
-//                         onChange={(e) => setData('password', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.password} className="mt-2" />
-//                 </div>
-
-//                 <div className="mt-4">
-//                     <InputLabel htmlFor="password_confirmation" value="Confirm Password" />
-
-//                     <TextInput
-//                         id="password_confirmation"
-//                         type="password"
-//                         name="password_confirmation"
-//                         value={data.password_confirmation}
-//                         className="mt-1 block w-full"
-//                         autoComplete="new-password"
-//                         onChange={(e) => setData('password_confirmation', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.password_confirmation} className="mt-2" />
-//                 </div>
-
-//                 <div className="flex items-center justify-end mt-4">
-//                     <Link
-//                         href={route('login')}
-//                         className="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-//                     >
-//                         Already registered?
-//                     </Link>
-
-//                     <PrimaryButton className="ms-4" disabled={processing}>
-//                         Register
-//                     </PrimaryButton>
-//                 </div>
-//             </form>
-//         </GuestLayout>
-//     );
-// }
-
-
+import { useEffect } from 'react';
+import GuestLayout from '@/Layouts/GuestLayout';
+import InputError from '@/Components/InputError';
+import InputLabel from '@/Components/InputLabel';
+import PrimaryButton from '@/Components/PrimaryButton';
+import TextInput from '@/Components/TextInput';
+import { Head, Link, useForm } from '@inertiajs/react';
 import Navbar from '@/Components/Frontend_Components/Navbar'
 import React from 'react'
 
 const Register = () => {
+    const { data, setData, post, processing, errors, reset } = useForm({
+        name: '',
+        email: '',
+        password: '',
+        password_confirmation: '',
+    });
+
+    useEffect(() => {
+        return () => {
+            reset('password', 'password_confirmation');
+        };
+    }, []);
+
+    const submit = (e) => {
+        e.preventDefault();
+
+        post(route('register'));
+    };
+
     return (
         <>
             <Navbar />
@@ -158,102 +65,79 @@ const Register = () => {
                                                         <div className="d-none d-md-block">
                                                             <div className="login-or">Or via email</div>
                                                             <div>
-                                                                <form id="payment-login-form-desktop" name="newAccountForm" noValidate autoComplete="off">
+                                                                <form onSubmit={submit} id="payment-login-form-desktop" name="newAccountForm" noValidate autoComplete="off">
                                                                     <div>
                                                                         <div className="form-group-v2">
                                                                             <div className="form-item-v2 margin-r-15">
+                                                                            <InputLabel htmlFor="name" value="Name" />
                                                                                 <input
-                                                                                    placeholder="First name"
-                                                                                    type="text"
-                                                                                    name="firstname"
+                                                                                    id="name"
+                                                                                    name="name"
+                                                                                    value={data.name}
+                                                                                    autoComplete="name"
+                                                                                    isFocused={true}
+                                                                                    onChange={(e) => setData('name', e.target.value)}
                                                                                     required
                                                                                     className="form-style-v2"
                                                                                 />
+                                                                                <InputError message={errors.email} className="mt-2" />
                                                                                 <div className="text-left" style={{ display: 'none' }}></div>
                                                                             </div>
                                                                             <div className="form-item-v2">
+                                                                            <InputLabel htmlFor="email" value="Email" />
                                                                                 <input
-                                                                                    placeholder="Last name"
-                                                                                    type="text"
-                                                                                    name="lastname"
-                                                                                    required
-                                                                                    className="form-style-v2"
-                                                                                />
-                                                                                <div className="text-left" style={{ display: 'none' }}></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div className="form-group-v2">
-                                                                            <div className="form-item-v2">
-                                                                                <input
-                                                                                    placeholder="Email"
-                                                                                    autoCorrect="off"
-                                                                                    autoCapitalize="off"
-                                                                                    spellCheck="false"
+                                                                                    id="email"
                                                                                     type="email"
                                                                                     name="email"
+                                                                                    value={data.email}
+                                                                                    autoComplete="username"
+                                                                                    onChange={(e) => setData('email', e.target.value)}
                                                                                     required
                                                                                     className="form-style-v2"
                                                                                 />
+                                                                                <InputError message={errors.email} className="mt-2" />
                                                                                 <div className="text-left" style={{ display: 'none' }}></div>
                                                                             </div>
                                                                         </div>
                                                                         <div className="form-group-v2">
                                                                             <div className="form-item-v2">
+                                                                            <InputLabel htmlFor="password" value="Password" />
                                                                                 <input
-                                                                                    id="emailConfirmation"
-                                                                                    placeholder="Enter your email again"
-                                                                                    autoCorrect="off"
-                                                                                    autoCapitalize="off"
-                                                                                    spellCheck="false"
-                                                                                    type="email"
-                                                                                    name="emailConfirmation"
-                                                                                    required
-                                                                                    className="form-style-v2"
-                                                                                />
-                                                                                <div className="text-left" style={{ display: 'none' }}></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div className="form-group-v2">
-                                                                            <div className="form-item-v2 position-relative">
-                                                                                <input
-                                                                                    placeholder="Password"
-                                                                                    autoComplete="off"
-                                                                                    autoCorrect="off"
-                                                                                    autoCapitalize="off"
-                                                                                    spellCheck="false"
-                                                                                    name="loginPassword"
-                                                                                    required
+                                                                                    id="password"
                                                                                     type="password"
+                                                                                    name="password"
+                                                                                    value={data.password}
+
+                                                                                    autoComplete="new-password"
+                                                                                    onChange={(e) => setData('password', e.target.value)}
+                                                                                    required
                                                                                     className="form-style-v2"
                                                                                 />
-                                                                                <div className="input-icon-right-container">
-                                                                                    <div className="nanny-icon input-icon-right opened-eye"></div>
-                                                                                </div>
+                                                                                <InputError message={errors.password} className="mt-2" />
                                                                                 <div className="text-left" style={{ display: 'none' }}></div>
                                                                             </div>
                                                                         </div>
-                                                                        <div className="d-none form-group-v2">
+                                                                        <div className="form-group-v2">
                                                                             <div className="form-item-v2">
-                                                                                <span className="link-action mb-2">Je possède un code de parrainage</span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div className="mb-3 mt-3">
-                                                                            <div className="form-item">
+                                                                            <InputLabel htmlFor="confirmPassword" value="ConfirmPassword" />
                                                                                 <input
-                                                                                    id="newslettersAcceptedpayment-login-form-desktop"
-                                                                                    name="newslettersAccepted"
-                                                                                    type="checkbox"
+                                                                                    id="password_confirmation"
+                                                                                    type="password"
+                                                                                    name="password_confirmation"
+                                                                                    value={data.password_confirmation}
+
+                                                                                    autoComplete="new-password"
+                                                                                    onChange={(e) => setData('password_confirmation', e.target.value)}
+                                                                                    required
+                                                                                    className="form-style-v2"
                                                                                 />
-                                                                                <label
-                                                                                    htmlFor="newslettersAcceptedpayment-login-form-desktop"
-                                                                                    className="fs-15"
-                                                                                    style={{ marginLeft: '10px' }}
-                                                                                >
-                                                                                    I subscribe to the Nannybag newsletters
-                                                                                </label>
+                                                                                <InputError message={errors.password_confirmation} className="mt-2" />
+                                                                                <div className="text-left" style={{ display: 'none' }}></div>
                                                                             </div>
                                                                         </div>
-                                                                        <input type="submit" className="nanny-btn-login" value="Register" />
+                                                                        <PrimaryButton className="nanny-btn-login" disabled={processing}>Register</PrimaryButton>
+                                                                        
+
                                                                     </div>
                                                                 </form>
                                                             </div>
@@ -308,111 +192,81 @@ const Register = () => {
                                                                     <div className="d-none d-md-block d-block">
                                                                         <div className="login-or">Or via email</div>
                                                                         <div>
-                                                                            <form
-                                                                                id="payment-form-login"
-                                                                                name="newAccountForm"
-                                                                                noValidate
-                                                                                autoComplete="off"
-                                                                            >
-                                                                                <div>
-                                                                                    <div className="form-group-v2">
-                                                                                        <div className="form-item-v2 margin-r-15">
-                                                                                            <input
-                                                                                                placeholder="First name"
-                                                                                                type="text"
-                                                                                                name="firstname"
-                                                                                                required
-                                                                                                className="form-style-v2"
-                                                                                            />
-                                                                                            <div className="text-left" style={{ display: 'none' }}></div>
-                                                                                        </div>
-                                                                                        <div className="form-item-v2">
-                                                                                            <input
-                                                                                                placeholder="Last name"
-                                                                                                type="text"
-                                                                                                name="lastname"
-                                                                                                required
-                                                                                                className="form-style-v2"
-                                                                                            />
-                                                                                            <div className="text-left" style={{ display: 'none' }}></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div className="form-group-v2">
-                                                                                        <div className="form-item-v2">
-                                                                                            <input
-                                                                                                placeholder="Email"
-                                                                                                autoCorrect="off"
-                                                                                                autoCapitalize="off"
-                                                                                                spellCheck="false"
-                                                                                                type="email"
-                                                                                                name="email"
-                                                                                                required
-                                                                                                className="form-style-v2"
-                                                                                            />
-                                                                                            <div className="text-left" style={{ display: 'none' }}></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div className="form-group-v2">
-                                                                                        <div className="form-item-v2">
-                                                                                            <input
-                                                                                                id="emailConfirmation"
-                                                                                                placeholder="Enter your email again"
-                                                                                                autoCorrect="off"
-                                                                                                autoCapitalize="off"
-                                                                                                spellCheck="false"
-                                                                                                type="email"
-                                                                                                name="emailConfirmation"
-                                                                                                required
-                                                                                                className="form-style-v2"
-                                                                                            />
-                                                                                            <div className="text-left" style={{ display: 'none' }}></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div className="form-group-v2">
-                                                                                        <div className="form-item-v2 position-relative">
-                                                                                            <input
-                                                                                                placeholder="Password"
-                                                                                                autoComplete="off"
-                                                                                                autoCorrect="off"
-                                                                                                autoCapitalize="off"
-                                                                                                spellCheck="false"
-                                                                                                name="loginPassword"
-                                                                                                required
-                                                                                                type="password"
-                                                                                                className="form-style-v2"
-                                                                                            />
-                                                                                            <div className="input-icon-right-container">
-                                                                                                <div className="nanny-icon input-icon-right opened-eye"></div>
-                                                                                            </div>
-                                                                                            <div className="text-left" style={{ display: 'none' }}></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div className="d-none form-group-v2">
-                                                                                        <div className="form-item-v2">
-                                                                                            <span className="link-action mb-2">
-                                                                                                Je possède un code de parrainage
-                                                                                            </span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div className="mb-3 mt-3">
-                                                                                        <div className="form-item">
-                                                                                            <input
-                                                                                                id="newslettersAcceptedpayment-form-login"
-                                                                                                name="newslettersAccepted"
-                                                                                                type="checkbox"
-                                                                                            />
-                                                                                            <label
-                                                                                                htmlFor="newslettersAcceptedpayment-form-login"
-                                                                                                className="fs-15"
-                                                                                                style={{ marginLeft: '10px' }}
-                                                                                            >
-                                                                                                I subscribe to the Nannybag newsletters
-                                                                                            </label>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <input type="submit" className="nanny-btn-login visible" value="Register" />
-                                                                                </div>
-                                                                            </form>
+                                                                        <form onSubmit={submit} id="payment-login-form-desktop" name="newAccountForm" noValidate autoComplete="off">
+                                                                    <div>
+                                                                        <div className="form-group-v2">
+                                                                            <div className="form-item-v2 margin-r-15">
+                                                                            <InputLabel htmlFor="name" value="Name" />
+                                                                                <input
+                                                                                    id="name"
+                                                                                    name="name"
+                                                                                    value={data.name}
+                                                                                    autoComplete="name"
+                                                                                    isFocused={true}
+                                                                                    onChange={(e) => setData('name', e.target.value)}
+                                                                                    required
+                                                                                    className="form-style-v2"
+                                                                                />
+                                                                                <InputError message={errors.email} className="mt-2" />
+                                                                                <div className="text-left" style={{ display: 'none' }}></div>
+                                                                            </div>
+                                                                            <div className="form-item-v2">
+                                                                            <InputLabel htmlFor="email" value="Email" />
+                                                                                <input
+                                                                                    id="email"
+                                                                                    type="email"
+                                                                                    name="email"
+                                                                                    value={data.email}
+                                                                                    autoComplete="username"
+                                                                                    onChange={(e) => setData('email', e.target.value)}
+                                                                                    required
+                                                                                    className="form-style-v2"
+                                                                                />
+                                                                                <InputError message={errors.email} className="mt-2" />
+                                                                                <div className="text-left" style={{ display: 'none' }}></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="form-group-v2">
+                                                                            <div className="form-item-v2">
+                                                                            <InputLabel htmlFor="password" value="Password" />
+                                                                                <input
+                                                                                    id="password"
+                                                                                    type="password"
+                                                                                    name="password"
+                                                                                    value={data.password}
+
+                                                                                    autoComplete="new-password"
+                                                                                    onChange={(e) => setData('password', e.target.value)}
+                                                                                    required
+                                                                                    className="form-style-v2"
+                                                                                />
+                                                                                <InputError message={errors.password} className="mt-2" />
+                                                                                <div className="text-left" style={{ display: 'none' }}></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="form-group-v2">
+                                                                            <div className="form-item-v2">
+                                                                            <InputLabel htmlFor="confirmPassword" value="ConfirmPassword" />
+                                                                                <input
+                                                                                    id="password_confirmation"
+                                                                                    type="password"
+                                                                                    name="password_confirmation"
+                                                                                    value={data.password_confirmation}
+
+                                                                                    autoComplete="new-password"
+                                                                                    onChange={(e) => setData('password_confirmation', e.target.value)}
+                                                                                    required
+                                                                                    className="form-style-v2"
+                                                                                />
+                                                                                <InputError message={errors.password_confirmation} className="mt-2" />
+                                                                                <div className="text-left" style={{ display: 'none' }}></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <PrimaryButton className="nanny-btn-login" disabled={processing}>Register</PrimaryButton>
+                                                                        
+
+                                                                    </div>
+                                                                </form>
                                                                         </div>
                                                                     </div>
                                                                     <div className="mobile-modal-bottom">

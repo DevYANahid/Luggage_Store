@@ -3563,7 +3563,9 @@ button:focus {
   font: normal normal 800 16px/17px Source Sans Pro;
   min-height: 54px;
   padding: 16px;
-  width: 100%
+  width: 100%;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .nanny-btn-login:focus {
@@ -3572,8 +3574,8 @@ button:focus {
 
 .form-style-v2 {
   background: #fff;
-  border: 1px solid #e4e4e4;
-  border-radius: 8px;
+ 
+
   color: #6f798d;
   font: normal normal normal 15px/17px Source Sans Pro;
   min-height: 55px;
