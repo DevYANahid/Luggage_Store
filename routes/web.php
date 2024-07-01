@@ -20,6 +20,8 @@ use Inertia\Inertia;
 
 Route::get('/',[HomeController::class,'home'])->name('home');
 Route::get('/luggage-storage',[StorageController::class,'storage'])->name('storage');
+Route::get('/payment',[StorageController::class,'withoutlog'])->name('withoutlog');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

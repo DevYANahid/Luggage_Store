@@ -10,4 +10,7 @@ class StorageController extends Controller
     public function storage(){
         return Inertia::render('Frontend/Storage');
     }
+    public function withoutlog(){
+        return Inertia::render('Frontend/WithoutLogin');
+    }
 }

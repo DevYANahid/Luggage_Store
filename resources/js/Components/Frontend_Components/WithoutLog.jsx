@@ -1,129 +1,9 @@
-// import { useEffect } from 'react';
-// import GuestLayout from '@/Layouts/GuestLayout';
-// import InputError from '@/Components/InputError';
-// import InputLabel from '@/Components/InputLabel';
-// import PrimaryButton from '@/Components/PrimaryButton';
-// import TextInput from '@/Components/TextInput';
-// import { Head, Link, useForm } from '@inertiajs/react';
-
-// export default function Register() {
-//     const { data, setData, post, processing, errors, reset } = useForm({
-//         name: '',
-//         email: '',
-//         password: '',
-//         password_confirmation: '',
-//     });
-
-//     useEffect(() => {
-//         return () => {
-//             reset('password', 'password_confirmation');
-//         };
-//     }, []);
-
-//     const submit = (e) => {
-//         e.preventDefault();
-
-//         post(route('register'));
-//     };
-
-//     return (
-//         <GuestLayout>
-//             <Head title="Register" />
-
-//             <form onSubmit={submit}>
-//                 <div>
-//                     <InputLabel htmlFor="name" value="Name" />
-
-//                     <TextInput
-//                         id="name"
-//                         name="name"
-//                         value={data.name}
-//                         className="mt-1 block w-full"
-//                         autoComplete="name"
-//                         isFocused={true}
-//                         onChange={(e) => setData('name', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.name} className="mt-2" />
-//                 </div>
-
-//                 <div className="mt-4">
-//                     <InputLabel htmlFor="email" value="Email" />
-
-//                     <TextInput
-//                         id="email"
-//                         type="email"
-//                         name="email"
-//                         value={data.email}
-//                         className="mt-1 block w-full"
-//                         autoComplete="username"
-//                         onChange={(e) => setData('email', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.email} className="mt-2" />
-//                 </div>
-
-//                 <div className="mt-4">
-//                     <InputLabel htmlFor="password" value="Password" />
-
-//                     <TextInput
-//                         id="password"
-//                         type="password"
-//                         name="password"
-//                         value={data.password}
-//                         className="mt-1 block w-full"
-//                         autoComplete="new-password"
-//                         onChange={(e) => setData('password', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.password} className="mt-2" />
-//                 </div>
-
-//                 <div className="mt-4">
-//                     <InputLabel htmlFor="password_confirmation" value="Confirm Password" />
-
-//                     <TextInput
-//                         id="password_confirmation"
-//                         type="password"
-//                         name="password_confirmation"
-//                         value={data.password_confirmation}
-//                         className="mt-1 block w-full"
-//                         autoComplete="new-password"
-//                         onChange={(e) => setData('password_confirmation', e.target.value)}
-//                         required
-//                     />
-
-//                     <InputError message={errors.password_confirmation} className="mt-2" />
-//                 </div>
-
-//                 <div className="flex items-center justify-end mt-4">
-//                     <Link
-//                         href={route('login')}
-//                         className="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-//                     >
-//                         Already registered?
-//                     </Link>
-
-//                     <PrimaryButton className="ms-4" disabled={processing}>
-//                         Register
-//                     </PrimaryButton>
-//                 </div>
-//             </form>
-//         </GuestLayout>
-//     );
-// }
-
-
-import Navbar from '@/Components/Frontend_Components/Navbar'
 import React from 'react'
 
-const Register = () => {
-    return (
-        <>
-            <Navbar />
+const WithoutLog = () => {
+  return (
+    <>
+           
             <div id="__nuxt">
                 <div id="__layout">
                     <div >
@@ -132,10 +12,10 @@ const Register = () => {
                             <div className="v2 booking minHeight100 extra-payment">
                                 <div className="content-row extras">
                                     <div className="content-lg row payment-content">
-                                        <div className="col-lg-12 col-12 mb-3 pr-xl-5">
+                                        <div className="col-lg-7 col-12 mb-3 pr-xl-5">
                                             <div>
                                                 <a className="back-button"><span className="nanny-icon left-icon"></span></a>
-                                                <h1>Registration For Booking</h1>
+                                                <h1>Your booking</h1>
                                             </div>
                                             <hr className="tablet top-separator" />
                                             <div>
@@ -433,6 +313,185 @@ const Register = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="col-lg-5 col-12 margin-b-5e hide-tablet">
+                                            <div className="invoice">
+                                                <div className="invoice-content">
+                                                    <div className="place-infos clearfix">
+                                                        <div className="place-text">
+                                                            <div className="type">
+                                                                <div className="address">
+                                                                    Rue Saint-Martin, Paris
+                                                                </div>
+                                                                <div className="nanny-type">
+                                                                    Souvenirs
+                                                                </div>
+                                                                <div className="d-flex nanny-stars">
+                                                                    <div className="type-point" style={{ display: 'none' }}>
+                                                                        •
+                                                                    </div>
+                                                                    <div className="all-stars">
+                                                                        <div className="nanny-icon yellow star"></div>
+                                                                        <div className="nanny-icon yellow star"></div>
+                                                                        <div className="nanny-icon yellow star"></div>
+                                                                        <div className="nanny-icon yellow star"></div>
+                                                                        <div className="nanny-icon yellow star"></div>
+                                                                    </div>
+                                                                    <div className="average">
+                                                                        4.9/5
+                                                                    </div>
+                                                                    <div className="reviews-count">
+                                                                        &nbsp;(3787)
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="place-pic">
+                                                            <div className="top-image nanny-type-banner SOUVENIR">
+                                                                <div className="type-icon nanny-type-icon white SOUVENIR"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="infos-part top-part" style={{ display: 'none' }}>
+                                                        <div className="separator"></div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item">
+                                                                Drop-off
+                                                            </div>
+                                                            <div className="value">
+                                                                Jun 30, 2024 at 6:30 PM - 7:00 PM
+                                                            </div>
+                                                        </div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item">
+                                                                Pick-up
+                                                            </div>
+                                                            <div className="value">
+                                                                Jun 30, 2024 at 7:30 PM - 8:00 PM
+                                                            </div>
+                                                        </div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item">
+                                                                Number of luggage
+                                                            </div>
+                                                            <div className="value">
+                                                                3
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="infos-part address-warning">
+                                                        <div className="separator"></div>
+                                                        <div className="title">
+                                                            Address
+                                                        </div>
+                                                        <div>The exact address will be given to you after booking</div>
+                                                        <div className="separator"></div>
+                                                    </div>
+                                                    <div className="infos-part">
+                                                        <div className="hide-tablet">
+                                                            <div>
+                                                                <p className="hide-tablet sections-title">
+                                                                    Dates
+                                                                </p>
+                                                                <div className="date-change">
+                                                                    <div>
+                                                                        <div className="d-flex flex-row dates-picker">
+                                                                            <div className="dates d-flex flex-row">
+                                                                                <div className="vdatetime">
+                                                                                    <p>
+                                                                                        Drop-off
+                                                                                    </p>
+                                                                                    <span className="nanny-icon calendar cursor-pointer leftcal"></span>
+                                                                                    <a id="bookingDepositDateTimeUniversal" role="button" className="to users-map-label">
+                                                                                        Today
+                                                                                        <span>18:30 - 19:00</span>
+                                                                                    </a>
+                                                                                    <div>
+                                                                                        <div>
+                                                                                            <div></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <span className="rightcal nanny-icon calendar cursor-pointer"></span>
+                                                                                <div className="vdatetime">
+                                                                                    <p>
+                                                                                        Pick-up
+                                                                                    </p>
+                                                                                    <a id="bookingWithdrawalDateTimeUniversal" role="button" className="to users-map-label">
+                                                                                        Today
+                                                                                        <span>19:30 - 20:00</span>
+                                                                                    </a>
+                                                                                    <div>
+                                                                                        <div>
+                                                                                            <div></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="hide-tablet">
+                                                            <div>
+                                                                <div className="search-luggage-v2-small">
+                                                                    <div className="d-flex justify-content-between">
+                                                                        <div className="head">
+                                                                            <p>Number of luggage ?</p>
+                                                                            <span className="detail">Suitcase, backpack, small bag</span>
+                                                                        </div>
+                                                                        <div className="flex-center">
+                                                                            <div className="luggage-button-box"><span className="nanny-icon minus-luggage"></span></div>
+                                                                            <div className="count">3</div>
+                                                                            <div className="luggage-button-box"><span className="nanny-icon plus-luggage"></span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="separator"></div>
+                                                    </div>
+                                                    <div>
+                                                        <div className="price-info">
+                                                            <div className="title">
+                                                                Price details
+                                                            </div>
+                                                        </div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item">
+                                                                €4.50 x 3 objects x 1 day
+                                                            </div>
+                                                            <div className="value">
+                                                                €13.50
+                                                            </div>
+                                                        </div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item">
+                                                                Fees and taxes
+                                                            </div>
+                                                            <div className="value">
+                                                                €4.50
+                                                            </div>
+                                                        </div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item">
+                                                                Luggage protection €10,000
+                                                            </div>
+                                                            <div className="value">
+                                                                Free
+                                                            </div>
+                                                        </div>
+                                                        <div className="separator"></div>
+                                                        <div className="price-info clearfix">
+                                                            <div className="item"><b>Total</b></div>
+                                                            <div className="value font-weight-bold">
+                                                                €18.00
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -444,7 +503,7 @@ const Register = () => {
                 </div>
             </div>
         </>
-    )
+  )
 }
 
-export default Register
+export default WithoutLog
