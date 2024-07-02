@@ -2650,7 +2650,7 @@ select {
 }
 
 .nanny-button.disabled {
-  background-color: rgba(255, 51, 102, .5)
+ cursor: pointer;
 }
 
 .nanny-button.wait {
@@ -9645,7 +9645,8 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%
+  width: 100%;
+  padding-top: 0;
 }
 
 .container-home .outer-box-search input::-webkit-input-placeholder,

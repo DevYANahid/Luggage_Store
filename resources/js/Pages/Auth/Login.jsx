@@ -6,6 +6,7 @@ import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
 import { Head, Link, useForm } from '@inertiajs/react';
+import Navbar from '@/Components/Frontend_Components/Navbar';
 
 export default function Login({ status, canResetPassword }) {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -27,6 +28,8 @@ export default function Login({ status, canResetPassword }) {
     };
 
     return (
+        <>
+        <Navbar />
         <div className="inner-menu-login not-connected container ">
             <div className="inside">
                 <div className="container-home">
@@ -95,6 +98,7 @@ export default function Login({ status, canResetPassword }) {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 
