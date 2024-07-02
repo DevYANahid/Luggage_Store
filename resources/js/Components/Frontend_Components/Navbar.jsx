@@ -90,7 +90,6 @@ const Navbar = () => {
               <input value="Login" type="button" className="margin-t-10 nanny-btn-login d-md-none" />
               <div className="login-subtitle">
                 <Link href={route('register')}> No account? <spen className="color-nanny cursor-pointer">Register</spen></Link>
-               
               </div>
             </div>
           </div>

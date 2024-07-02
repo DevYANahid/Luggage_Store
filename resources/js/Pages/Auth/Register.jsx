@@ -145,7 +145,7 @@ const Register = () => {
                                                         <input type="button" value="Register" className="margin-t-10 nanny-btn-login d-md-none" />
                                                         <div className="login-subtitle">
                                                             Already have a Nannybag account?{' '}
-                                                            <span className="font-weight-bold color-nanny underline cursor-pointer">Login</span>
+                                                            <Link href={route('login')} className="font-weight-bold color-nanny underline cursor-pointer">Login</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -166,9 +166,9 @@ const Register = () => {
                                                                             <div>Back</div>
                                                                             <div>
                                                                                 <div>
-                                                                                    <span className="font-weight-bold color-nanny underline cursor-pointer">
+                                                                                    <Link href={route('login')} className="font-weight-bold color-nanny underline cursor-pointer">
                                                                                         Login
-                                                                                    </span>
+                                                                                    </Link>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
