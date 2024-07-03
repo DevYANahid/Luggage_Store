@@ -52,6 +52,7 @@ export default function Login({ status, canResetPassword }) {
                                     <InputLabel htmlFor="email" value="Email :" />
                                     <input id="email"
                                         type="email"
+                                        placeholder='Enter Your Email'
                                         name="email"
                                         value={data.email}
                                         autoComplete="username"
@@ -64,6 +65,7 @@ export default function Login({ status, canResetPassword }) {
                                     <InputLabel htmlFor="password" value="Password :" />
                                     <input id="password"
                                         type="password"
+                                        placeholder='Enter Your Password'
                                         name="password"
                                         value={data.password}
                                         autoComplete="current-password"

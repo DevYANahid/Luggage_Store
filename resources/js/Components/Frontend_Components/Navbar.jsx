@@ -100,6 +100,7 @@ const submit = (e) => {
                                     <InputLabel htmlFor="email" value="Email :" />
                                     <input id="email"
                                         type="email"
+                                        placeholder='Enter Your Email'
                                         name="email"
                                         value={data.email}
                                         autoComplete="username"
@@ -111,6 +112,7 @@ const submit = (e) => {
                                 <div className="position-relative">
                                     <InputLabel htmlFor="password" value="Password :" />
                                     <input id="password"
+                                        placeholder='Enter Your Password'
                                         type="password"
                                         name="password"
                                         value={data.password}

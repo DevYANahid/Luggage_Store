@@ -1,13 +1,13 @@
-import Sidebar from '@/Components/Frontend_Components/Sidebar/Sidebar';
-import Topbar from '@/Components/Frontend_Components/Topbar/Topbar';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
+import Topbar from './Backend/Topbar/Topbar';
+import Sidebar from './Backend/Sidebar/Sidebar';
 
-export default function Dashboard({ auth }) {
+export default function Dashboard() {
     return (
      <>
-        <Topbar />
-        <Sidebar />
+       <Topbar />
+       <Sidebar />
      </>
     );
 }
